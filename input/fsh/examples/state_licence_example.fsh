@@ -19,6 +19,19 @@ InstanceOf: Organization
 Usage: #example
 Title: "Florida Board of Medicine"
 * name = "Florida Board of Medicine"
+* endpoint[0] = Reference(endpoint-florida-board-verify)
+
+Instance: endpoint-florida-board-verify
+InstanceOf: Endpoint
+Usage: #example
+* status = #active
+* connectionType.system = "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"
+* connectionType.code = #hl7-fhir-rest
+* address = "https://api.florida.board.org/verify/fhir"
+* payloadType[0].coding[0].system = "http://terminology.hl7.org/CodeSystem/endpoint-payload-type"
+* payloadType[0].coding[0].code = #any
+* payloadType[0].text = "FHIR Practitioner & VerificationResult"
+* payloadMimeType[0] = #application/fhir+json
 
 // ───────────────────────────── Practitioner with LICENSE slice ─────────────────────────────
 Instance: prac-jordan-rivera-license-only

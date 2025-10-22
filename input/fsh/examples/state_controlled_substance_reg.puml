@@ -1,0 +1,124 @@
+@startuml
+title PSV — State CSR (Practitioner, Org/Endpoint, VR, Provenance, Evidence)
+
+/' Resource instances as classes with key fields '/
+class "Practitioner/prac-state-csr-with-vr" as P <<Practitioner>> {
+  identifier[NPI] = 1098765432
+  name = "Mariana Lopez"
+  --
+  qualification[state-csr][0]:
+    code = state-csr
+    identifier.system = https://flhealth.example.gov/csr
+    identifier.value  = CSR-7744
+    period.start = 2023-01-01
+    period.end   = 2026-12-31
+    issuer -> org-florida-csr-authority
+    <<extension: qualification-jurisdiction>> = FL
+    <<extension: qualification-status>>       = active
+  --
+  qualification[state-csr][1]:
+    code = state-csr
+    identifier.system = https://dch.ga.gov/csr
+    identifier.value  = CSR-GA-2219
+    period.start = 2024-03-01
+    period.end   = 2027-02-28
+    issuer -> org-florida-csr-authority  ' (swap to GA issuer if defined)
+    <<extension: qualification-jurisdiction>> = GA
+}
+
+class "Organization/org-florida-csr-authority" as FLCSR <<Organization>> {
+  name = "Florida Department of Health — Controlled Substance Registration"
+  endpoint -> Endpoint/endpoint-florida-csr-verify
+}
+
+class "Endpoint/endpoint-florida-csr-verify" as ECSR <<Endpoint>> {
+  status = active
+  connectionType = hl7-fhir-rest
+  address = https://api.flhealth.example.gov/csr/fhir
+  payloadType = any
+  payloadMimeType = application/fhir+json
+}
+
+class "DocumentReference/docref-csr-fl-7744" as DR1 <<DocumentReference>> {
+  status = current
+  type = "State CSR verification result"
+  content[0].attachment.contentType = application/json
+  content[0].attachment.url = https://api.flhealth.example.gov/csr/verify?id=CSR-7744
+}
+
+class "DocumentReference/docref-csr-ga-2219" as DR2 <<DocumentReference>> {
+  status = current
+  type = "State CSR verification result"
+  content[0].attachment.contentType = application/json
+  content[0].attachment.url = https://api.gahealth.example.gov/csr/verify?id=CSR-GA-2219
+}
+
+class "VerificationResult/vr-csr-fl-7744" as VR1 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:05:00Z
+  targetLocation = qualification[state-csr][0]
+  validationType = state-csr-primary-source
+  --
+  primarySource[0]:
+    who -> org-florida-csr-authority
+    communicationMethod = "API lookup"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "VerificationResult/vr-csr-ga-2219" as VR2 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:08:00Z
+  targetLocation = qualification[state-csr][1]
+  validationType = state-csr-primary-source
+  --
+  primarySource[0]:
+    who -> org-florida-csr-authority   ' (swap to GA issuer if defined)
+    communicationMethod = "API lookup"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "Provenance/prov-vr-csr-fl-7744" as PR1 <<Provenance>> {
+  recorded = 2025-10-21T14:06:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-florida-csr-authority
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-csr-fl-7744
+}
+
+class "Provenance/prov-vr-csr-ga-2219" as PR2 <<Provenance>> {
+  recorded = 2025-10-21T14:09:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-florida-csr-authority   ' (swap to GA issuer if defined)
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-csr-ga-2219
+}
+
+/' Associations mirroring references '/
+P -- FLCSR : issuer (qualification[state-csr])
+FLCSR --> ECSR : endpoint
+
+VR1 --> P    : target[0]
+VR2 --> P    : target[0]
+VR1 --> FLCSR: primarySource[0].who
+VR2 --> FLCSR: primarySource[0].who
+
+PR1 --> VR1 : target[0]
+PR1 --> DR1 : entity[0].what
+PR2 --> VR2 : target[0]
+PR2 --> DR2 : entity[0].what
+
+note right of P
+<<extensions (by URL)>>
+- qualification-jurisdiction = FL/GA
+  system: US Core USPS State
+- qualification-status (optional) = active
+  system: psv-qualification-status-cs
+end note
+
+note bottom of VR1
+validationType.system:\npsv-verification-type-cs
+primarySource.validationStatus.system:\nterminology.hl7.org/CodeSystem/verificationresult-status
+end note
+@enduml

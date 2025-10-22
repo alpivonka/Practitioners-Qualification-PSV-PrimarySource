@@ -1,0 +1,138 @@
+@startuml
+title PSV — Board Certifications: Practitioner, Organizations, Endpoints, VRs, Provenance, Evidence
+
+/' -------------------- Resource instances -------------------- '/
+class "Practitioner/prac-boards-with-vr" as P <<Practitioner>> {
+  identifier[NPI] = 1234567893
+  name = "Alex Nguyen"
+  --
+  qualification[board][0]:
+    code = board
+    identifier.value = ABIM-000111222
+    period.start = 2020-07-01
+    period.end   = 2030-06-30
+    issuer -> org-abim
+    <<extension: qualification-specialty>>    = IM
+    <<extension: qualification-subspecialty>> = CARD
+  --
+  qualification[board][1]:
+    code = board
+    identifier.value = ABEM-445566
+    period.start = 2019-09-01
+    period.end   = 2029-08-31
+    issuer -> org-abem
+    <<extension: qualification-specialty>>    = EM
+    <<extension: qualification-status>>       = active
+}
+
+class "Organization/org-abim" as ABIM <<Organization>> {
+  name = "American Board of Internal Medicine (ABIM)"
+  endpoint -> Endpoint/endpoint-abim-verify
+}
+
+class "Endpoint/endpoint-abim-verify" as EABIM <<Endpoint>> {
+  status = active
+  connectionType = hl7-fhir-rest
+  address = https://verify.abim.org/fhir
+  payloadType = any
+  payloadMimeType = application/fhir+json
+}
+
+class "Organization/org-abem" as ABEM <<Organization>> {
+  name = "American Board of Emergency Medicine (ABEM)"
+  endpoint -> Endpoint/endpoint-abem-verify
+}
+
+class "Endpoint/endpoint-abem-verify" as EABEM <<Endpoint>> {
+  status = active
+  connectionType = hl7-fhir-rest
+  address = https://api.abem.org/verify/fhir
+  payloadType = any
+  payloadMimeType = application/fhir+json
+}
+
+class "DocumentReference/docref-abim-verification" as DR1 <<DocumentReference>> {
+  status = current
+  type = "Board certification verification (ABIM)"
+  content[0].attachment.contentType = text/html
+  content[0].attachment.url = https://verify.abim.org/cert?certId=ABIM-000111222
+}
+
+class "DocumentReference/docref-abem-verification" as DR2 <<DocumentReference>> {
+  status = current
+  type = "Board certification verification (ABEM)"
+  content[0].attachment.contentType = text/html
+  content[0].attachment.url = https://www.abem.org/verify?certId=ABEM-445566
+}
+
+class "VerificationResult/vr-prac-boards-abim" as VR1 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:05:00Z
+  targetLocation = qualification[board][0]
+  validationType = board-primary-source
+  --
+  primarySource[0]:
+    who -> org-abim
+    communicationMethod = "Online portal lookup"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "VerificationResult/vr-prac-boards-abem" as VR2 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:10:00Z
+  targetLocation = qualification[board][1]
+  validationType = board-primary-source
+  --
+  primarySource[0]:
+    who -> org-abem
+    communicationMethod = "Online portal lookup"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "Provenance/prov-vr-prac-boards-abim" as PR1 <<Provenance>> {
+  recorded = 2025-10-21T14:11:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-abim
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-abim-verification
+}
+
+class "Provenance/prov-vr-prac-boards-abem" as PR2 <<Provenance>> {
+  recorded = 2025-10-21T14:12:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-abem
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-abem-verification
+}
+
+/' -------------------- Associations -------------------- '/
+P -- ABIM : issuer (qualification[board][0])
+P -- ABEM : issuer (qualification[board][1])
+
+VR1 --> P    : target[0]
+VR2 --> P    : target[0]
+VR1 --> ABIM : primarySource[0].who
+VR2 --> ABEM : primarySource[0].who
+
+PR1 --> VR1  : target[0]
+PR2 --> VR2  : target[0]
+PR1 --> DR1  : entity[0].what
+PR2 --> DR2  : entity[0].what
+
+ABIM --> EABIM : endpoint
+ABEM --> EABEM : endpoint
+
+note right of P
+<<extensions (by URL)>>
+- qualification-specialty (system: psv-board-specialty-cs)
+- qualification-subspecialty (system: psv-board-subspecialty-cs)
+- qualification-status (system: psv-qualification-status-cs)
+end note
+
+note bottom of VR1
+validationType.system: psv-verification-type-cs
+primarySource.validationStatus.system:\nterminology.hl7.org/CodeSystem/verificationresult-status
+end note
+@enduml

@@ -1,0 +1,104 @@
+@startuml
+title PSV — State License Verification (All Resources)
+
+/' Resource instances as classes with key fields '/
+class "Practitioner/prac-jordan-rivera-license-only" as P <<Practitioner>> {
+  identifier[NPI] = 1987654321
+  name = "Jordan Rivera"
+  --
+  qualification[license][0]:
+    code = license
+    identifier.system = https://flboard.gov/license
+    identifier.value  = ME12345
+    period.start = 2023-01-01
+    period.end   = 2026-12-31
+    issuer -> org-florida-medical-board
+    <<extension: qualification-status>>      = active
+    <<extension: qualification-jurisdiction>>= FL
+}
+
+class "Organization/org-florida-medical-board" as FL <<Organization>> {
+  name = "Florida Board of Medicine"
+  endpoint -> Endpoint/endpoint-florida-board-verify
+}
+
+class "Endpoint/endpoint-florida-board-verify" as EFL <<Endpoint>> {
+  status = active
+  connectionType = hl7-fhir-rest
+  address = https://api.florida.board.org/verify/fhir
+  payloadType = any
+  payloadMimeType = application/fhir+json
+}
+
+class "VerificationResult/vr-license-jordan-rivera" as VR1 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:05:00Z
+  targetLocation = qualification[license][0]
+  validationType = license-primary-source
+  --
+  primarySource[0]:
+    who -> org-florida-medical-board
+    communicationMethod = "API lookup"
+    validationDate = 2025-10-21T14:05:00Z
+    validationStatus = successful
+}
+
+class "VerificationResult/vr-alex-smith-license-2025Q1" as VR2 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:05:00Z
+  targetLocation = qualification[license][0]
+  validationType = license-primary-source
+  --
+  primarySource[0]:
+    who -> org-florida-medical-board
+    communicationMethod = "API lookup"
+    validationDate = 2025-10-21T14:05:00Z
+    validationStatus = successful
+}
+
+class "Provenance/prov-vr-alex-smith-license-2025Q1" as PR <<Provenance>> {
+  recorded = 2025-02-15T10:33:10-05:00
+  agent[0].type = verifier
+  agent[0].who -> org-state-medical-board
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-board-response
+}
+
+class "DocumentReference/docref-board-response" as DR <<DocumentReference>> {
+  status = current
+  type = "Board verification lookup result"
+  content[0].attachment.contentType = application/json
+  content[0].attachment.url = https://api.stateboard.example.gov/verify?license=MD-987654321&npi=1234567893
+}
+
+/' This org is referenced by Provenance.agent.who; include for completeness '/
+class "Organization/org-state-medical-board" as SMB <<Organization>> {
+  name = "State Medical Board"
+}
+
+/' Associations mirroring references '/
+P -- FL : issuer (qualification[license])
+FL --> EFL : endpoint
+
+VR1 --> P   : target[0]
+VR2 --> P   : target[0]
+VR1 --> FL  : primarySource[0].who
+VR2 --> FL  : primarySource[0].who
+
+PR  --> VR2 : target[0]
+PR  --> DR  : entity[0].what
+PR  --> SMB : agent[0].who
+
+note right of P
+<<extensions (by URL)>>
+- qualification-status = active
+  system: psv-qualification-status-cs
+- qualification-jurisdiction = FL
+  system: US Core USPS State
+end note
+
+note bottom of VR1
+validationType.system:\npsv-verification-type-cs
+primarySource.validationStatus.system:\nterminology.hl7.org/CodeSystem/verificationresult-status
+end note
+@enduml

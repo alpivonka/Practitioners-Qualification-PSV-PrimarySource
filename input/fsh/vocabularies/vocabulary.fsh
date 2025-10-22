@@ -43,3 +43,41 @@ ValueSet: PSVQualificationStatusVS
 Id: psvVS-qualification-status
 Title: "VS - Qualification Status"
 * include codes from system psv-qualification-status-cs
+
+CodeSystem: PSVDEAScheduleCS
+Id: psv-dea-schedule-cs
+Title: "DEA Controlled Substance Schedules (II–V)"
+Description: "Subset of U.S. controlled substance schedules commonly applicable to prescribers. Schedule I excluded."
+* ^caseSensitive = true
+* ^content = #complete
+* #II   "Schedule II"
+* #III  "Schedule III"
+* #IV   "Schedule IV"
+* #V    "Schedule V"
+
+ValueSet: PSVDEAScheduleVS
+Id: psvVS-dea-schedule
+Title: "VS — DEA Controlled Substance Schedules (II–V)"
+Description: "Allowed DEA schedules for clinician prescribing context."
+* include codes from system $csDEASchedule
+
+CodeSystem: PSVDEARegistrantTypeCS
+Id: psv-dea-registrant-type-cs
+Title: "DEA Registrant Type"
+Description: "DEA registrant categories relevant to care delivery and dispensing."
+* ^caseSensitive = true
+* ^content = #complete
+* #practitioner           "Practitioner"
+* #midlevel-practitioner  "Mid-level Practitioner"
+* #hospital-clinic        "Hospital/Clinic"
+* #pharmacy               "Pharmacy"
+* #teaching-institution   "Teaching Institution"
+* #narcotic-treatment     "Narcotic Treatment Program"
+* #researcher             "Researcher"
+
+ValueSet: PSVDEARegistrantTypeVS
+Id: psvVS-dea-registrant-type
+Title: "VS — DEA Registrant Type"
+Description: "Allowed DEA registrant categories for practitioner credentialing."
+* include codes from system $csDEARegistrantType
+

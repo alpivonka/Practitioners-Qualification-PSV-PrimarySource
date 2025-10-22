@@ -1,0 +1,124 @@
+@startuml
+title PSV — DEA Registrations (Practitioner, VR, Provenance, Evidence, Org/Endpoint)
+
+/' Resource instances as classes with key fields '/
+class "Practitioner/prac-dea-with-vr" as P <<Practitioner>> {
+  identifier[NPI] = 1234987654
+  name = "Riya Patel"
+  --
+  qualification[dea][0]:
+    code = dea
+    identifier.system = https://www.dea.gov/registration
+    identifier.value  = AB1234567
+    period.start = 2024-05-01
+    period.end   = 2027-04-30
+    issuer -> org-dea-diversion
+    <<extension: qualification-status>> = active
+    <<extension: dea-schedules>>        = II, III
+    <<extension: dea-registrant-type>>  = practitioner
+  --
+  qualification[dea][1]:
+    code = dea
+    identifier.system = https://www.dea.gov/registration
+    identifier.value  = BA7654321
+    period.start = 2024-07-15
+    period.end   = 2027-07-14
+    issuer -> org-dea-diversion
+    <<extension: dea-schedules>>        = III, IV, V
+}
+
+class "Organization/org-dea-diversion" as DEA <<Organization>> {
+  name = "DEA Diversion Control Division"
+  endpoint -> Endpoint/endpoint-dea-diversion
+}
+
+class "Endpoint/endpoint-dea-diversion" as EDEA <<Endpoint>> {
+  status = active
+  connectionType = hl7-fhir-rest
+  address = https://dea.example.gov/diversion/fhir
+  payloadType = any
+  payloadMimeType = application/fhir+json
+}
+
+class "DocumentReference/docref-dea-AB1234567" as DR1 <<DocumentReference>> {
+  status = current
+  type = "DEA registration verification result"
+  content[0].attachment.contentType = application/json
+  content[0].attachment.url = https://dea.example.gov/diversion/api/verify?id=AB1234567
+}
+
+class "DocumentReference/docref-dea-BA7654321" as DR2 <<DocumentReference>> {
+  status = current
+  type = "DEA registration verification result"
+  content[0].attachment.contentType = application/json
+  content[0].attachment.url = https://dea.example.gov/diversion/api/verify?id=BA7654321
+}
+
+class "VerificationResult/vr-dea-AB1234567" as VR1 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:05:00Z
+  targetLocation = qualification[dea][0]
+  validationType = dea-primary-source
+  --
+  primarySource[0]:
+    who -> org-dea-diversion
+    communicationMethod = "API lookup"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "VerificationResult/vr-dea-BA7654321" as VR2 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T14:08:00Z
+  targetLocation = qualification[dea][1]
+  validationType = dea-primary-source
+  --
+  primarySource[0]:
+    who -> org-dea-diversion
+    communicationMethod = "API lookup"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "Provenance/prov-vr-dea-AB1234567" as PR1 <<Provenance>> {
+  recorded = 2025-10-21T14:06:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-dea-diversion
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-dea-AB1234567
+}
+
+class "Provenance/prov-vr-dea-BA7654321" as PR2 <<Provenance>> {
+  recorded = 2025-10-21T14:09:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-dea-diversion
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-dea-BA7654321
+}
+
+/' Associations mirroring references '/
+P -- DEA  : issuer (qualification[dea][0..1])
+DEA --> EDEA : endpoint
+
+VR1 --> P  : target[0]
+VR2 --> P  : target[0]
+VR1 --> DEA: primarySource[0].who
+VR2 --> DEA: primarySource[0].who
+
+PR1 --> VR1: target[0]
+PR1 --> DR1: entity[0].what
+PR2 --> VR2: target[0]
+PR2 --> DR2: entity[0].what
+
+note right of P
+<<extensions (by URL)>>
+- qualification-status (system: psv-qualification-status-cs)
+- dea-schedules (system: psv-dea-schedule-cs)
+- dea-registrant-type (system: psv-dea-registrant-type-cs)
+end note
+
+note bottom of VR1
+validationType.system: psv-verification-type-cs
+primarySource.validationStatus.system:\nterminology.hl7.org/CodeSystem/verificationresult-status
+end note
+@enduml

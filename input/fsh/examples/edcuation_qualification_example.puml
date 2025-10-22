@@ -1,0 +1,116 @@
+@startuml
+title PSV — Education (Practitioner, Org/Endpoint, VR, Provenance, Evidence)
+
+/' Resource instances as classes with key fields '/
+class "Practitioner/prac-education-with-vr" as P <<Practitioner>> {
+  identifier[NPI] = 1478523690
+  name = "Morgan Chen"
+  --
+  qualification[education][0]:
+    code = education
+    issuer -> org-state-university-med
+    period.start = 2016-05-15
+    <<extension: qualification-degree>> = MD
+    <<extension: qualification-status>> = active
+  --
+  qualification[education][1]:
+    code = education
+    issuer -> org-state-university-med
+    period.start = 2012-05-15
+    <<extension: qualification-degree>> = BS
+}
+
+class "Organization/org-state-university-med" as ORG <<Organization>> {
+  name = "State University College of Medicine"
+  endpoint -> Endpoint/endpoint-state-university-registrar
+}
+
+class "Endpoint/endpoint-state-university-registrar" as EP <<Endpoint>> {
+  status = active
+  connectionType = hl7-fhir-rest
+  address = https://registrar.stateu.example.edu/fhir
+  payloadType = any
+  payloadMimeType = application/fhir+json
+}
+
+class "DocumentReference/docref-education-md" as DR1 <<DocumentReference>> {
+  status = current
+  type = "Degree verification (MD)"
+  content[0].attachment.contentType = application/pdf
+  content[0].attachment.url = https://registrar.stateu.example.edu/verify?degree=MD&student=1478523690
+}
+
+class "DocumentReference/docref-education-bs" as DR2 <<DocumentReference>> {
+  status = current
+  type = "Degree verification (BS)"
+  content[0].attachment.contentType = application/json
+  content[0].attachment.url = https://registrar.stateu.example.edu/verify?degree=BS&student=1478523690
+}
+
+class "VerificationResult/vr-education-md" as VR1 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T13:55:00Z
+  targetLocation = qualification[education][0]
+  validationType = education-primary-source
+  --
+  primarySource[0]:
+    who -> org-state-university-med
+    communicationMethod = "Registrar API"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "VerificationResult/vr-education-bs" as VR2 <<VerificationResult>> {
+  status = validated
+  statusDate = 2025-10-21T13:57:00Z
+  targetLocation = qualification[education][1]
+  validationType = education-primary-source
+  --
+  primarySource[0]:
+    who -> org-state-university-med
+    communicationMethod = "Registrar API"
+    validationDate = 2025-10-21
+    validationStatus = successful
+}
+
+class "Provenance/prov-vr-education-md" as PR1 <<Provenance>> {
+  recorded = 2025-10-21T13:56:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-state-university-med
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-education-md
+}
+
+class "Provenance/prov-vr-education-bs" as PR2 <<Provenance>> {
+  recorded = 2025-10-21T13:58:00Z
+  agent[0].type = verifier
+  agent[0].who -> org-state-university-med
+  entity[0].role = source
+  entity[0].what -> DocumentReference/docref-education-bs
+}
+
+/' Associations mirroring references '/
+P -- ORG : issuer (qualification[education])
+ORG --> EP : endpoint
+
+VR1 --> P  : target[0]
+VR2 --> P  : target[0]
+VR1 --> ORG: primarySource[0].who
+VR2 --> ORG: primarySource[0].who
+
+PR1 --> VR1: target[0]
+PR1 --> DR1: entity[0].what
+PR2 --> VR2: target[0]
+PR2 --> DR2: entity[0].what
+
+note right of P
+<<extensions (by URL)>>
+- qualification-degree (system: psv-degree-cs)
+- qualification-status (system: psv-qualification-status-cs)
+end note
+
+note bottom of VR1
+validationType.system:\npsv-verification-type-cs
+primarySource.validationStatus.system:\nterminology.hl7.org/CodeSystem/verificationresult-status
+end note
+@enduml
