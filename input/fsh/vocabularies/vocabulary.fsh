@@ -26,3 +26,20 @@ ValueSet: PSVActionVS
 Id: psv-action-vs
 Title: "PSV Action"
 * include codes from system PSVActionCS
+
+// CodeSystem Name is UpperCamelCase; Id can keep hyphens
+CodeSystem: PSVQualificationStatusCS
+Id: psv-qualification-status-cs
+Title: "Qualification Status"
+* ^content = #complete
+* #active     "Active"
+* #inactive   "Inactive"
+* #expired    "Expired"
+* #suspended  "Suspended"
+* #restricted "Restricted"
+
+// ValueSet Name is UpperCamelCase; Id can keep hyphens
+ValueSet: PSVQualificationStatusVS
+Id: psvVS-qualification-status
+Title: "VS - Qualification Status"
+* include codes from system psv-qualification-status-cs
