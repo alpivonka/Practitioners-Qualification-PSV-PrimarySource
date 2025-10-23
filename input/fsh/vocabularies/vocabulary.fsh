@@ -81,3 +81,61 @@ Title: "VS — DEA Registrant Type"
 Description: "Allowed DEA registrant categories for practitioner credentialing."
 * include codes from system $csDEARegistrantType
 
+CodeSystem: PSVTrainingTypeCS
+Id: psv-training-type-cs
+Title: "Training Type"
+Description: "Types of postgraduate clinical training programs."
+* ^url = $csTrainingType
+* ^caseSensitive = true
+* ^content = #complete
+* #residency        "Residency"
+* #fellowship       "Fellowship"
+* #internship       "Internship"
+* #transitional-year "Transitional Year"
+* #preliminary-year  "Preliminary Year"
+
+ValueSet: PSVTrainingTypeVS
+Id: psvVS-training-type
+Title: "VS — Training Type"
+Description: "Allowed training types for practitioner qualifications."
+* ^url = $vsTrainingType
+* include codes from system $csTrainingType
+
+CodeSystem: PSVCompletionStatusCS
+Id: psv-completion-status-cs
+Title: "Training Completion Status"
+Description: "Completion state for a training program."
+* ^url = $csCompletionStatus
+* ^caseSensitive = true
+* ^content = #complete
+* #completed      "Completed"
+* #in-progress    "In Progress"
+* #not-completed  "Not Completed"
+* #withdrawn      "Withdrawn"
+* #terminated     "Terminated"
+
+ValueSet: PSVCompletionStatusVS
+Id: psvVS-completion-status
+Title: "VS — Training Completion Status"
+Description: "Allowed values for training completion status."
+* ^url = $vsCompletionStatus
+* include codes from system $csCompletionStatus
+
+CodeSystem: PSVBoardSpecialtyCS
+Id: psv-board-specialty-cs
+Title: "Board/Training Specialty (Minimal)"
+Description: "Minimal specialty codes used in examples. Replace/expand with your authoritative list."
+* ^url = $csBoardSpecialty
+* ^caseSensitive = true
+* ^content = #complete
+* #IM    "Internal Medicine"
+* #EM    "Emergency Medicine"
+* #CARD  "Cardiovascular Disease"
+
+ValueSet: PSVBoardSpecialtyVS
+Id: psvVS-board-specialty
+Title: "VS — Board/Training Specialty"
+Description: "Allowed specialties used for training/board examples."
+* ^url = $vsBoardSpecialty
+* include codes from system $csBoardSpecialty
+

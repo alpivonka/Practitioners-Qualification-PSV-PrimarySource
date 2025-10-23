@@ -1,0 +1,97 @@
+@startuml
+title PSV — License Sanction with Evidence & Flag (All Resources)
+
+/' Resource instances as classes with key fields '/
+class "Practitioner/prac-sanction-demo" as P <<Practitioner>> {
+  identifier[NPI] = 1234567893
+  name = "Morgan Chavez"
+  --
+  qualification[license][0]:
+    code = license
+    identifier.system = https://flboard.gov/license
+    identifier.value  = ME-445566
+    period.start = 2022-01-01
+    period.end   = 2026-12-31
+    issuer -> Organization/org-florida-medical-board
+    <<extension: qualification-status>>       = suspended
+    <<extension: qualification-restriction>> = "No direct patient care until 2025-12-31"
+}
+
+class "Organization/org-florida-medical-board" as FL <<Organization>> {
+  name = "Florida Board of Medicine"
+}
+
+class "DocumentReference/doc-suspension-order" as DR <<DocumentReference>> {
+  status = current
+  type   = "Board Final Order"
+  date   = 2025-09-15T10:00:00Z
+  content[0].attachment.contentType = application/pdf
+  content[0].attachment.url = https://flboard.example/orders/2025-0915.pdf
+  content[0].attachment.title = "Final Order 2025-09-15"
+}
+
+class "VerificationResult/vr-license-suspension" as VR <<VerificationResult>> {
+  status = completed
+  statusDate = 2025-09-15T10:01:00Z
+  targetLocation[0] = qualification[license][0]
+  verificationType = "Sanction/Discipline Check"
+  validationType   = "Primary source portal review"
+  validationStatus = successful
+  note = "Summary suspension 2025-09-15 → 2025-12-31"
+  --
+  primarySource[0]:
+    who -> Organization/org-florida-medical-board
+    communicationMethod = "Portal"
+    validationStatus    = successful
+  evidence:
+    DocumentReference/doc-suspension-order
+}
+
+class "Flag/flag-license-sanction" as F <<Flag>> {
+  status   = active
+  category = Sanction
+  code     = "Board suspension"
+  subject  -> Practitioner/prac-sanction-demo
+  period.start = 2025-09-15
+  period.end   = 2025-12-31
+  --
+  evidence (ext):
+    VerificationResult/vr-license-suspension
+  targetLocation (ext) = "qualification[license][0]"
+}
+
+class "Provenance/prov-sanction-apply" as PR <<Provenance>> {
+  recorded = 2025-09-15T10:02:00Z
+  reason   = "Apply board suspension + raise Flag"
+  activity = "Update credential status; create Flag"
+  target[0] -> Practitioner/prac-sanction-demo
+  target[1] -> Flag/flag-license-sanction
+  agent[0].type = author
+  agent[0].who  = "PS-Verify Processor"
+  entity[0].role = source
+  entity[0].what -> VerificationResult/vr-license-suspension
+}
+
+/' Associations mirroring references '/
+P -- FL : issuer (qualification[license])
+VR --> P  : target[0]
+VR --> FL : primarySource[0].who
+VR ..> DR : evidence
+F  --> P  : subject
+PR --> P  : target
+PR --> F  : target
+PR ..> VR : entity[0].what
+
+note right of P
+<<extensions>>
+- qualification-status = suspended
+  system: psv-qualification-status-cs
+- qualification-restriction =
+  "No direct patient care until 2025-12-31"
+end note
+
+note bottom of VR
+validationStatus.system:
+terminology.hl7.org/CodeSystem/verificationresult-status
+end note
+@enduml

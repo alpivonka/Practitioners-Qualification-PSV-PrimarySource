@@ -1,6 +1,15 @@
 {
   "http://example.org/fhir/uv/psv/CodeSystem/psv-action-cs" : null,
   "http://unstats.un.org/unsd/methods/m49/m49.htm" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs" : null,
+  "http://terminology.hl7.org/CodeSystem/verificationresult-status" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-degree-cs" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-board-subspecialty-cs" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs" : null,
+  "http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state" : null,
   "urn:ietf:bcp:13" : null,
-  "http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs" : null
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs" : null,
+  "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs" : null
 }

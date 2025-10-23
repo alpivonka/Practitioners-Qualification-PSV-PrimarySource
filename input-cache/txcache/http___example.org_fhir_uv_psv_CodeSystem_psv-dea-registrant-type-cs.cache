@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "valueSet" :{
+  "resourceType" : "ValueSet",
+  "compose" : {
+    "inactive" : true,
+    "include" : [{
+      "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"
+    }]
+  }
+}}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: Unable to provide support for code system http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"
+}
+-------------------------------------------------------------------------------------
+{"hierarchical" : true, "language": "en", "url": "http://example.com/fhir/psv/ValueSet/psvVS-dea-registrant-type", "version": "1.0.0"}####
+e: {
+  "from-server" : true,
+  "error" : "Error from https://tx.fhir.org/r4: Unable to provide support for code system http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"
+}
+-------------------------------------------------------------------------------------

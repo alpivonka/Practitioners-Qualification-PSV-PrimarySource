@@ -123,7 +123,7 @@ RuleSet: CommonQualBackbone
 * qualification[education].extension contains qualification-degree named degree 1..1
 * qualification[education] obeys inv-education-has-degree
 
-// ---------------- training ----------------
+// ---------------- training ---------------- Internship / Residency / Fellowship
 * qualification[training] insert CommonQualBackbone
 * qualification[training].code 1..
 * qualification[training].code = psv-qualification-type-cs#training
