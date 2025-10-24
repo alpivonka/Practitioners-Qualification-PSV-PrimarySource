@@ -139,7 +139,6 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 pages:
   index.md: Home
   StructureDefinition-psv-practitioner-intro.md: "PSV Practitioner (Intro)"
-  practitioner-credentials-IG-vision-scoping.md: "IG Vision"
   spec.md: "Spec definition"
 
 # The ImplementationGuide resource defines several other properties
