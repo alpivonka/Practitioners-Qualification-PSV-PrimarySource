@@ -1,0 +1,59 @@
+{
+  "resourceType" : "VerificationResult",
+  "id" : "vr-license-suspension",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: VerificationResult vr-license-suspension</b></p><a name=\"vr-license-suspension\"> </a><a name=\"hcvr-license-suspension\"> </a><p><b>org/fhir/uv/psv/StructureDefinition/verification-evidence</b>: <a href=\"DocumentReference-doc-suspension-order.html\">DocumentReference: status = current; type = ; date = 2025-09-15 10:00:00+0000</a></p><p><b>target</b>: <a href=\"Practitioner-prac-sanction-demo.html\">Practitioner Morgan Chavez </a></p><p><b>targetLocation</b>: qualification[license][0]</p><p><b>status</b>: completed</p><p><b>statusDate</b>: 2025-09-15 10:01:00+0000</p><p><b>failureAction</b>: <span title=\"Codes:\">Suspend practice; remove from schedules</span></p><h3>PrimarySources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-org-florida-medical-board.html\">Organization Florida Board of Medicine</a></td><td><span title=\"Codes:\">Portal</span></td><td><span title=\"Codes:\">successful</span></td><td>2025-09-15 10:01:00+0000</td></tr></table><h3>Attestations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>Date</b></td></tr><tr><td style=\"display: none\">*</td><td>PS-Verify Service</td><td>2025-09-15</td></tr></table><hr/><blockquote><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference #local-doc</b></p><a name=\"vr-license-suspension/local-doc\"> </a><a name=\"hcvr-license-suspension/local-doc\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Board Order</span></p><p><b>date</b>: 2025-09-15 10:00:00+0000</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://flboard.example/orders/2025-0915.pdf\">https://flboard.example/orders/2025-0915.pdf</a></td><td>Final Order 2025-09-15</td></tr></table></blockquote></blockquote></div>"
+  },
+  "contained" : [{
+    "resourceType" : "DocumentReference",
+    "id" : "local-doc",
+    "status" : "current",
+    "type" : {
+      "text" : "Board Order"
+    },
+    "date" : "2025-09-15T10:00:00Z",
+    "content" : [{
+      "attachment" : {
+        "contentType" : "application/pdf",
+        "url" : "https://flboard.example/orders/2025-0915.pdf",
+        "title" : "Final Order 2025-09-15"
+      }
+    }]
+  }],
+  "extension" : [{
+    "url" : "http://example.org/fhir/uv/psv/StructureDefinition/verification-evidence",
+    "valueReference" : {
+      "reference" : "DocumentReference/doc-suspension-order"
+    }
+  }],
+  "target" : [{
+    "reference" : "Practitioner/prac-sanction-demo"
+  }],
+  "targetLocation" : ["qualification[license][0]"],
+  "status" : "completed",
+  "statusDate" : "2025-09-15T10:01:00Z",
+  "failureAction" : {
+    "text" : "Suspend practice; remove from schedules"
+  },
+  "primarySource" : [{
+    "who" : {
+      "reference" : "Organization/org-florida-medical-board"
+    },
+    "communicationMethod" : [{
+      "text" : "Portal"
+    }],
+    "validationStatus" : {
+      "coding" : [{
+        "code" : "successful"
+      }]
+    },
+    "validationDate" : "2025-09-15T10:01:00Z"
+  }],
+  "attestation" : {
+    "who" : {
+      "display" : "PS-Verify Service"
+    },
+    "date" : "2025-09-15"
+  }
+}

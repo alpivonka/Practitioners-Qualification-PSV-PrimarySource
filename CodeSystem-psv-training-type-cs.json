@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "psv-training-type-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-training-type-cs</b></p><a name=\"psv-training-type-cs\"> </a><a name=\"hcpsv-training-type-cs\"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">residency<a name=\"psv-training-type-cs-residency\"> </a></td><td>Residency</td></tr><tr><td style=\"white-space:nowrap\">fellowship<a name=\"psv-training-type-cs-fellowship\"> </a></td><td>Fellowship</td></tr><tr><td style=\"white-space:nowrap\">internship<a name=\"psv-training-type-cs-internship\"> </a></td><td>Internship</td></tr><tr><td style=\"white-space:nowrap\">transitional-year<a name=\"psv-training-type-cs-transitional-year\"> </a></td><td>Transitional Year</td></tr><tr><td style=\"white-space:nowrap\">preliminary-year<a name=\"psv-training-type-cs-preliminary-year\"> </a></td><td>Preliminary Year</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+  "version" : "1.0.0",
+  "name" : "PSVTrainingTypeCS",
+  "title" : "Training Type",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Types of postgraduate clinical training programs.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "residency",
+    "display" : "Residency"
+  },
+  {
+    "code" : "fellowship",
+    "display" : "Fellowship"
+  },
+  {
+    "code" : "internship",
+    "display" : "Internship"
+  },
+  {
+    "code" : "transitional-year",
+    "display" : "Transitional Year"
+  },
+  {
+    "code" : "preliminary-year",
+    "display" : "Preliminary Year"
+  }]
+}

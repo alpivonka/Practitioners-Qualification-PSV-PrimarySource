@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/CodeSystem/psv-action-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "psv-action-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-action-cs</b></p><a name=\"psv-action-cs\"> </a><a name=\"hcpsv-action-cs\"> </a><p>This  code system <code>http://example.com/fhir/psv/CodeSystem/psv-action-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">record-only<a name=\"psv-action-cs-record-only\"> </a></td><td>Record Only</td></tr><tr><td style=\"white-space:nowrap\">manual-review<a name=\"psv-action-cs-manual-review\"> </a></td><td>Manual Review</td></tr><tr><td style=\"white-space:nowrap\">block<a name=\"psv-action-cs-block\"> </a></td><td>Block</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.com/fhir/psv/CodeSystem/psv-action-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSVActionCS"] ; # 
+  fhir:title [ fhir:v "PSV  Action CodeSystem"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-10-24T14:50:11+00:00"^^xsd:dateTime] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "record-only" ] ;
+     fhir:display [ fhir:v "Record Only" ]
+  ] [
+     fhir:code [ fhir:v "manual-review" ] ;
+     fhir:display [ fhir:v "Manual Review" ]
+  ] [
+     fhir:code [ fhir:v "block" ] ;
+     fhir:display [ fhir:v "Block" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

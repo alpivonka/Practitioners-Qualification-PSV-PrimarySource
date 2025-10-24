@@ -1,0 +1,9 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://example.com/fhir/psv/CodeSystem/psv-action-cs,1.0.0,draft,,PSVActionCS,PSV  Action CodeSystem,"",
+http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs,1.0.0,active,,PSVDEARegistrantTypeCS,DEA Registrant Type,"DEA registrant categories relevant to care delivery and dispensing.",
+http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs,1.0.0,active,,PSVDEAScheduleCS,DEA Controlled Substance Schedules (II–V),"Subset of U.S. controlled substance schedules commonly applicable to prescribers. Schedule I excluded.",
+http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs,1.0.0,active,,PSVQualificationStatusCS,Qualification Status,"",
+http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs,1.0.0,draft,,PSVVerificationTypeCS,PSV Verification Type CodeSystem,"",
+http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs,1.0.0,active,,PSVBoardSpecialtyCS,Board/Training Specialty (Minimal),"Minimal specialty codes used in examples. Replace/expand with your authoritative list.",
+http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs,1.0.0,active,,PSVCompletionStatusCS,Training Completion Status,"Completion state for a training program.",
+http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs,1.0.0,active,,PSVTrainingTypeCS,Training Type,"Types of postgraduate clinical training programs.",

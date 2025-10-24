@@ -1,0 +1,18 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "docref-education-bs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference docref-education-bs</b></p><a name=\"docref-education-bs\"> </a><a name=\"hcdocref-education-bs\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Degree verification (BS)</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/json</td><td><a href=\"https://registrar.stateu.example.edu/verify?degree=BS&amp;student=1478523690\">https://registrar.stateu.example.edu/verify?degree=BS&amp;student=1478523690</a></td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "text" : "Degree verification (BS)"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/json",
+      "url" : "https://registrar.stateu.example.edu/verify?degree=BS&student=1478523690"
+    }
+  }]
+}

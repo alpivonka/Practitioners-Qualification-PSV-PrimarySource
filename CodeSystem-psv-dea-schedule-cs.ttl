@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "psv-dea-schedule-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-dea-schedule-cs</b></p><a name=\"psv-dea-schedule-cs\"> </a><a name=\"hcpsv-dea-schedule-cs\"> </a><p>This case-sensitive code system <code>http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">II<a name=\"psv-dea-schedule-cs-II\"> </a></td><td>Schedule II</td></tr><tr><td style=\"white-space:nowrap\">III<a name=\"psv-dea-schedule-cs-III\"> </a></td><td>Schedule III</td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"psv-dea-schedule-cs-IV\"> </a></td><td>Schedule IV</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"psv-dea-schedule-cs-V\"> </a></td><td>Schedule V</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSVDEAScheduleCS"] ; # 
+  fhir:title [ fhir:v "DEA Controlled Substance Schedules (II–V)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-24T14:50:11+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Subset of U.S. controlled substance schedules commonly applicable to prescribers. Schedule I excluded."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "II" ] ;
+     fhir:display [ fhir:v "Schedule II" ]
+  ] [
+     fhir:code [ fhir:v "III" ] ;
+     fhir:display [ fhir:v "Schedule III" ]
+  ] [
+     fhir:code [ fhir:v "IV" ] ;
+     fhir:display [ fhir:v "Schedule IV" ]
+  ] [
+     fhir:code [ fhir:v "V" ] ;
+     fhir:display [ fhir:v "Schedule V" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

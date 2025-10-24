@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="psvVS-training-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet psvVS-training-type</b></p><a name="psvVS-training-type"> </a><a name="hcpsvVS-training-type"> </a><ul><li>Include all codes defined in <a href="CodeSystem-psv-training-type-cs.html"><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;1.0.0</span></li></ul></div>
+  </text>
+  <url value="http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type"/>
+  <version value="1.0.0"/>
+  <name value="PSVTrainingTypeVS"/>
+  <title value="VS — Training Type"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Allowed training types for practitioner qualifications."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"/>
+    </include>
+  </compose>
+</ValueSet>

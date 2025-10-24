@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="docref-csr-fl-7744"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference docref-csr-fl-7744</b></p><a name="docref-csr-fl-7744"> </a><a name="hcdocref-csr-fl-7744"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:">State CSR verification result</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>application/json</td><td><a href="https://api.flhealth.example.gov/csr/verify?id=CSR-7744">https://api.flhealth.example.gov/csr/verify?id=CSR-7744</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <text value="State CSR verification result"/>
+  </type>
+  <content>
+    <attachment>
+      <contentType value="application/json"/>
+      <url value="https://api.flhealth.example.gov/csr/verify?id=CSR-7744"/>
+    </attachment>
+  </content>
+</DocumentReference>

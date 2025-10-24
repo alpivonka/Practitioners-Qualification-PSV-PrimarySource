@@ -1,0 +1,246 @@
+{
+  "package": "credentials-psv-primarysource",
+  "version": "1.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/action",
+      "title": "Action",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/completion-status",
+      "title": "Training Completion Status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/flag-evidence",
+      "title": "Flag Evidence (VerificationResult link)",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/flag-targetLocation",
+      "title": "Flag Target Location (element path)",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/qualification-restriction",
+      "title": "Qualification Restriction",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/qualification-specialty",
+      "title": "Qualification Specialty",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/qualification-status",
+      "title": "Qualification Status",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://example.com/fhir/psv/StructureDefinition/training-type",
+      "title": "Training Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
+  "profiles": {
+    "Practitioner": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner",
+        "title": "PSV Practitioner with Qualification Slices (Common Pattern + Rules)"
+      }
+    ],
+    "ActivityDefinition": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-activity-definition",
+        "title": "PSV ActivityDefinition (Verification Activity)"
+      }
+    ],
+    "AuditEvent": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-audit-event",
+        "title": "PSV AuditEvent"
+      }
+    ],
+    "Endpoint": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-endpoint",
+        "title": "PSV Endpoint (US Core derived)"
+      }
+    ],
+    "Binary": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-evidence-binary",
+        "title": "PSV Evidence Binary"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-evidence-document",
+        "title": "PSV Evidence Document"
+      }
+    ],
+    "Measure": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-measure",
+        "title": "PSV Measure"
+      }
+    ],
+    "MeasureReport": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-measure-report",
+        "title": "PSV MeasureReport"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-organization",
+        "title": "PSV Organization (US Core derived)"
+      }
+    ],
+    "OrganizationAffiliation": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-organizationaffiliation",
+        "title": "PSV OrganizationAffiliation"
+      }
+    ],
+    "PlanDefinition": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-plan-definition",
+        "title": "PSV PlanDefinition (Policy)"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-practitionerrole",
+        "title": "PSV PractitionerRole (US Core derived)"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-provenance",
+        "title": "PSV Provenance (US Core derived)"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-verification-task",
+        "title": "PSV Verification Task"
+      }
+    ],
+    "VerificationResult": [
+      {
+        "url": "http://example.com/fhir/psv/StructureDefinition/psv-verificationresult",
+        "title": "PSV VerificationResult"
+      }
+    ]
+  },
+  "usage": {
+    "http://example.com/fhir/psv/StructureDefinition/action": [
+      "VerificationResult"
+    ],
+    "http://example.com/fhir/psv/StructureDefinition/flag-evidence": [
+      "Flag"
+    ],
+    "http://example.com/fhir/psv/StructureDefinition/flag-targetLocation": [
+      "Flag"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/acgme-program-id": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/completion-status": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/dea-registrant-type": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/flag-evidence": [
+      "Flag"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/flag-targetLocation": [
+      "Flag"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/qualification-degree": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/qualification-restriction": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/qualification-subspecialty": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/training-type": [
+      "Practitioner.qualification"
+    ],
+    "http://example.org/fhir/uv/psv/StructureDefinition/verification-evidence": [
+      "VerificationResult"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

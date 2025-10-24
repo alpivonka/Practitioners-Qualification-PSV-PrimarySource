@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/CodeSystem/psv-completion-status-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "psv-completion-status-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-completion-status-cs</b></p><a name=\"psv-completion-status-cs\"> </a><a name=\"hcpsv-completion-status-cs\"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"psv-completion-status-cs-completed\"> </a></td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\">in-progress<a name=\"psv-completion-status-cs-in-progress\"> </a></td><td>In Progress</td></tr><tr><td style=\"white-space:nowrap\">not-completed<a name=\"psv-completion-status-cs-not-completed\"> </a></td><td>Not Completed</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"psv-completion-status-cs-withdrawn\"> </a></td><td>Withdrawn</td></tr><tr><td style=\"white-space:nowrap\">terminated<a name=\"psv-completion-status-cs-terminated\"> </a></td><td>Terminated</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSVCompletionStatusCS"] ; # 
+  fhir:title [ fhir:v "Training Completion Status"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-24T14:50:11+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Completion state for a training program."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "completed" ] ;
+     fhir:display [ fhir:v "Completed" ]
+  ] [
+     fhir:code [ fhir:v "in-progress" ] ;
+     fhir:display [ fhir:v "In Progress" ]
+  ] [
+     fhir:code [ fhir:v "not-completed" ] ;
+     fhir:display [ fhir:v "Not Completed" ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Withdrawn" ]
+  ] [
+     fhir:code [ fhir:v "terminated" ] ;
+     fhir:display [ fhir:v "Terminated" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

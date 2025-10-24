@@ -1,0 +1,18 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "docref-abim-verification",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference docref-abim-verification</b></p><a name=\"docref-abim-verification\"> </a><a name=\"hcdocref-abim-verification\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Board certification verification (ABIM)</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>text/html</td><td><a href=\"https://verify.abim.org/cert?certId=ABIM-000111222\">https://verify.abim.org/cert?certId=ABIM-000111222</a></td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "text" : "Board certification verification (ABIM)"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "text/html",
+      "url" : "https://verify.abim.org/cert?certId=ABIM-000111222"
+    }
+  }]
+}

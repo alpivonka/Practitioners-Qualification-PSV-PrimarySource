@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Provenance/prov-vr-prac-boards-abim> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prov-vr-prac-boards-abim"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance prov-vr-prac-boards-abim</b></p><a name=\"prov-vr-prac-boards-abim\"> </a><a name=\"hcprov-vr-prac-boards-abim\"> </a><p>Provenance for <a href=\"VerificationResult-vr-prac-boards-abim.html\">VerificationResult: targetLocation = qualification[board][0]; status = validated; statusDate = 2025-10-21 14:05:00+0000; validationType = board-primary-source</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-10-21 14:11:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}\">Verifier</span></td><td><a href=\"Organization-org-abim.html\">Organization American Board of Internal Medicine (ABIM)</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://example.com/fhir/psv/VerificationResult/vr-prac-boards-abim> ;
+     fhir:reference [ fhir:v "VerificationResult/vr-prac-boards-abim" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-10-21T14:11:00Z"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "verifier" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://example.com/fhir/psv/Organization/org-abim> ;
+       fhir:reference [ fhir:v "Organization/org-abim" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:link <http://example.com/fhir/psv/DocumentReference/docref-abim-verification> ;
+       fhir:reference [ fhir:v "DocumentReference/docref-abim-verification" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

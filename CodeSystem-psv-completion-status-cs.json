@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "psv-completion-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-completion-status-cs</b></p><a name=\"psv-completion-status-cs\"> </a><a name=\"hcpsv-completion-status-cs\"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">completed<a name=\"psv-completion-status-cs-completed\"> </a></td><td>Completed</td></tr><tr><td style=\"white-space:nowrap\">in-progress<a name=\"psv-completion-status-cs-in-progress\"> </a></td><td>In Progress</td></tr><tr><td style=\"white-space:nowrap\">not-completed<a name=\"psv-completion-status-cs-not-completed\"> </a></td><td>Not Completed</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"psv-completion-status-cs-withdrawn\"> </a></td><td>Withdrawn</td></tr><tr><td style=\"white-space:nowrap\">terminated<a name=\"psv-completion-status-cs-terminated\"> </a></td><td>Terminated</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+  "version" : "1.0.0",
+  "name" : "PSVCompletionStatusCS",
+  "title" : "Training Completion Status",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Completion state for a training program.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "completed",
+    "display" : "Completed"
+  },
+  {
+    "code" : "in-progress",
+    "display" : "In Progress"
+  },
+  {
+    "code" : "not-completed",
+    "display" : "Not Completed"
+  },
+  {
+    "code" : "withdrawn",
+    "display" : "Withdrawn"
+  },
+  {
+    "code" : "terminated",
+    "display" : "Terminated"
+  }]
+}

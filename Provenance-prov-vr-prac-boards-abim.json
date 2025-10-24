@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Provenance",
+  "id" : "prov-vr-prac-boards-abim",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance prov-vr-prac-boards-abim</b></p><a name=\"prov-vr-prac-boards-abim\"> </a><a name=\"hcprov-vr-prac-boards-abim\"> </a><p>Provenance for <a href=\"VerificationResult-vr-prac-boards-abim.html\">VerificationResult: targetLocation = qualification[board][0]; status = validated; statusDate = 2025-10-21 14:05:00+0000; validationType = board-primary-source</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-10-21 14:11:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}\">Verifier</span></td><td><a href=\"Organization-org-abim.html\">Organization American Board of Internal Medicine (ABIM)</a></td></tr></table></div>"
+  },
+  "target" : [{
+    "reference" : "VerificationResult/vr-prac-boards-abim"
+  }],
+  "recorded" : "2025-10-21T14:11:00Z",
+  "agent" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "code" : "verifier"
+      }]
+    },
+    "who" : {
+      "reference" : "Organization/org-abim"
+    }
+  }],
+  "entity" : [{
+    "role" : "source",
+    "what" : {
+      "reference" : "DocumentReference/docref-abim-verification"
+    }
+  }]
+}

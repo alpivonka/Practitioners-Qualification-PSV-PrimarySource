@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "psvVS-training-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet psvVS-training-type</b></p><a name=\"psvVS-training-type\"> </a><a name=\"hcpsvVS-training-type\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-psv-training-type-cs.html\"><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type",
+  "version" : "1.0.0",
+  "name" : "PSVTrainingTypeVS",
+  "title" : "VS — Training Type",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Allowed training types for practitioner qualifications.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"
+    }]
+  }
+}

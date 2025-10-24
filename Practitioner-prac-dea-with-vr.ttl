@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Practitioner/prac-dea-with-vr> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prac-dea-with-vr"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/psv/StructureDefinition/PSVPractitioner>
+     ] [
+       fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-dea-with-vr</b></p><a name=\"prac-dea-with-vr\"> </a><a name=\"hcprac-dea-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234987654</p><p><b>name</b>: Riya Patel </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs II}\">II</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs III}\">III</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-registrant-type</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs practitioner}\">practitioner</span></p><p><b>identifier</b>: <code>https://www.dea.gov/registration</code>/AB1234567</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs dea}\">dea</span></p><p><b>period</b>: 2024-05-01 --&gt; 2027-04-30</p><p><b>issuer</b>: <a href=\"Organization-org-dea-diversion.html\">Organization DEA Diversion Control Division</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs III}\">III</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs IV}\">IV</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs V}\">V</span></p><p><b>identifier</b>: <code>https://www.dea.gov/registration</code>/BA7654321</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs dea}\">dea</span></p><p><b>period</b>: 2024-07-15 --&gt; 2027-07-14</p><p><b>issuer</b>: <a href=\"Organization-org-dea-diversion.html\">Organization DEA Diversion Control Division</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234987654" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Patel" ] ;
+     fhir:given ( [ fhir:v "Riya" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "active" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "II" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "III" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/dea-registrant-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "practitioner" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://www.dea.gov/registration"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "AB1234567" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dea" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2024-05-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2027-04-30"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-dea-diversion> ;
+       fhir:reference [ fhir:v "Organization/org-dea-diversion" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "III" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IV" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "V" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://www.dea.gov/registration"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "BA7654321" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "dea" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2024-07-15"^^xsd:date ] ;
+       fhir:end [ fhir:v "2027-07-14"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-dea-diversion> ;
+       fhir:reference [ fhir:v "Organization/org-dea-diversion" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

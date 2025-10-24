@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VerificationResult xmlns="http://hl7.org/fhir">
+  <id value="vr-education-bs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: VerificationResult vr-education-bs</b></p><a name="vr-education-bs"> </a><a name="hcvr-education-bs"> </a><p><b>target</b>: <a href="Practitioner-prac-education-with-vr.html">Practitioner Morgan Chen </a></p><p><b>targetLocation</b>: qualification[education][1]</p><p><b>status</b>: Validated</p><p><b>statusDate</b>: 2025-10-21 13:57:00+0000</p><p><b>validationType</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs education-primary-source}">education-primary-source</span></p><h3>PrimarySources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-org-state-university-med.html">Organization State University College of Medicine</a></td><td><span title="Codes:">Registrar API</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/verificationresult-status successful}">successful</span></td><td>2025-10-21</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Practitioner/prac-education-with-vr"/>
+  </target>
+  <targetLocation value="qualification[education][1]"/>
+  <status value="validated"/>
+  <statusDate value="2025-10-21T13:57:00Z"/>
+  <validationType>
+    <coding>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs"/>
+      <code value="education-primary-source"/>
+    </coding>
+  </validationType>
+  <primarySource>
+    <who>
+      <reference value="Organization/org-state-university-med"/>
+    </who>
+    <communicationMethod>
+      <text value="Registrar API"/>
+    </communicationMethod>
+    <validationStatus>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/verificationresult-status"/>
+        <code value="successful"/>
+      </coding>
+    </validationStatus>
+    <validationDate value="2025-10-21"/>
+  </primarySource>
+</VerificationResult>

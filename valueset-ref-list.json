@@ -1,0 +1,108 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.com/fhir/psv/ValueSet/psv-action-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVActionVS",
+      "title" : "PSV Action",
+      "description" : "",
+      "systems" : ["http://example.com/fhir/psv/CodeSystem/psv-action-cs"],
+      "uses" : {
+      },
+      "StructureDefinition-action.html" : "Action"
+    },
+    {
+      "url" : "http://example.com/fhir/psv/ValueSet/psv-verification-type-vs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVVerificationTypeVS",
+      "title" : "PSV Verification Type",
+      "description" : "",
+      "systems" : [
+        "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-psv-verificationresult.html" : "PSV VerificationResult"
+    },
+    {
+      "url" : "http://example.com/fhir/psv/ValueSet/psvVS-dea-registrant-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVDEARegistrantTypeVS",
+      "title" : "VS — DEA Registrant Type",
+      "description" : "Allowed DEA registrant categories for practitioner credentialing.",
+      "systems" : [
+        "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"
+      ]
+    },
+    {
+      "url" : "http://example.com/fhir/psv/ValueSet/psvVS-dea-schedule",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVDEAScheduleVS",
+      "title" : "VS — DEA Controlled Substance Schedules (II–V)",
+      "description" : "Allowed DEA schedules for clinician prescribing context.",
+      "systems" : [
+        "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"
+      ]
+    },
+    {
+      "url" : "http://example.com/fhir/psv/ValueSet/psvVS-qualification-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVQualificationStatusVS",
+      "title" : "VS - Qualification Status",
+      "description" : "",
+      "systems" : [
+        "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-qualification-status.html" : "Qualification Status"
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-board-specialty",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVBoardSpecialtyVS",
+      "title" : "VS — Board/Training Specialty",
+      "description" : "Allowed specialties used for training/board examples.",
+      "systems" : [
+        "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-qualification-specialty.html" : "Qualification Specialty"
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-completion-status",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVCompletionStatusVS",
+      "title" : "VS — Training Completion Status",
+      "description" : "Allowed values for training completion status.",
+      "systems" : [
+        "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-completion-status.html" : "Training Completion Status"
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVTrainingTypeVS",
+      "title" : "VS — Training Type",
+      "description" : "Allowed training types for practitioner qualifications.",
+      "systems" : [
+        "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-training-type.html" : "Training Type"
+    }
+  ]
+}

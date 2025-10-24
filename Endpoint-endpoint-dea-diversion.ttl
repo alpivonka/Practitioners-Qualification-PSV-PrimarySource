@@ -1,0 +1,32 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Endpoint/endpoint-dea-diversion> a fhir:Endpoint ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "endpoint-dea-diversion"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Endpoint endpoint-dea-diversion</b></p><a name=\"endpoint-dea-diversion\"> </a><a name=\"hcendpoint-dea-diversion\"> </a><p><b>status</b>: Active</p><p><b>connectionType</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest\">Endpoint Connection Type hl7-fhir-rest</a>: HL7 FHIR</p><p><b>payloadType</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/endpoint-payload-type any}\">FHIR Practitioner &amp; VerificationResult</span></p><p><b>payloadMimeType</b>: application/fhir+json</p><p><b>address</b>: <a href=\"https://dea.example.gov/diversion/fhir\">https://dea.example.gov/diversion/fhir</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:connectionType [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/endpoint-connection-type"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "hl7-fhir-rest" ]
+  ] ; # 
+  fhir:payloadType ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/endpoint-payload-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "any" ]
+     ] ) ;
+     fhir:text [ fhir:v "FHIR Practitioner & VerificationResult" ]
+  ] ) ; # 
+  fhir:payloadMimeType ( [ fhir:v "application/fhir+json"] ) ; # 
+  fhir:address [ fhir:v "https://dea.example.gov/diversion/fhir"^^xsd:anyURI] . # 
+
+# -------------------------------------------------------------------------------------
+

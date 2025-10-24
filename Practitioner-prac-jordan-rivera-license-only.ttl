@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Practitioner/prac-jordan-rivera-license-only> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prac-jordan-rivera-license-only"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/psv/StructureDefinition/PSVPractitioner>
+     ] [
+       fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-jordan-rivera-license-only</b></p><a name=\"prac-jordan-rivera-license-only\"> </a><a name=\"hcprac-jordan-rivera-license-only\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1987654321</p><p><b>name</b>: Jordan Rivera </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction</b>: <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state FL}\">Florida</span></p><p><b>identifier</b>: <code>https://flboard.gov/license</code>/ME12345</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs license}\">license</span></p><p><b>period</b>: 2023-01-01 --&gt; 2026-12-31</p><p><b>issuer</b>: <a href=\"Organization-org-florida-medical-board.html\">Organization Florida Board of Medicine</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1987654321" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Rivera" ] ;
+     fhir:given ( [ fhir:v "Jordan" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "active" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "FL" ] ;
+           fhir:display [ fhir:v "Florida" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "https://flboard.gov/license"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "ME12345" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "license" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2026-12-31"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-florida-medical-board> ;
+       fhir:reference [ fhir:v "Organization/org-florida-medical-board" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

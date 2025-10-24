@@ -1,0 +1,18 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "docref-abem-verification",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference docref-abem-verification</b></p><a name=\"docref-abem-verification\"> </a><a name=\"hcdocref-abem-verification\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Board certification verification (ABEM)</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>text/html</td><td><a href=\"https://www.abem.org/verify?certId=ABEM-445566\">https://www.abem.org/verify?certId=ABEM-445566</a></td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "text" : "Board certification verification (ABEM)"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "text/html",
+      "url" : "https://www.abem.org/verify?certId=ABEM-445566"
+    }
+  }]
+}

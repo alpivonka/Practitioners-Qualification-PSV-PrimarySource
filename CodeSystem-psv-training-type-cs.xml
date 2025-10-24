@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="psv-training-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem psv-training-type-cs</b></p><a name="psv-training-type-cs"> </a><a name="hcpsv-training-type-cs"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">residency<a name="psv-training-type-cs-residency"> </a></td><td>Residency</td></tr><tr><td style="white-space:nowrap">fellowship<a name="psv-training-type-cs-fellowship"> </a></td><td>Fellowship</td></tr><tr><td style="white-space:nowrap">internship<a name="psv-training-type-cs-internship"> </a></td><td>Internship</td></tr><tr><td style="white-space:nowrap">transitional-year<a name="psv-training-type-cs-transitional-year"> </a></td><td>Transitional Year</td></tr><tr><td style="white-space:nowrap">preliminary-year<a name="psv-training-type-cs-preliminary-year"> </a></td><td>Preliminary Year</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"/>
+  <version value="1.0.0"/>
+  <name value="PSVTrainingTypeCS"/>
+  <title value="Training Type"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Types of postgraduate clinical training programs."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="residency"/>
+    <display value="Residency"/>
+  </concept>
+  <concept>
+    <code value="fellowship"/>
+    <display value="Fellowship"/>
+  </concept>
+  <concept>
+    <code value="internship"/>
+    <display value="Internship"/>
+  </concept>
+  <concept>
+    <code value="transitional-year"/>
+    <display value="Transitional Year"/>
+  </concept>
+  <concept>
+    <code value="preliminary-year"/>
+    <display value="Preliminary Year"/>
+  </concept>
+</CodeSystem>

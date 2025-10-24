@@ -1,0 +1,87 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "prac-state-csr-with-vr",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/psv/StructureDefinition/PSVPractitioner",
+    "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-state-csr-with-vr</b></p><a name=\"prac-state-csr-with-vr\"> </a><a name=\"hcprac-state-csr-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1098765432</p><p><b>name</b>: Mariana Lopez </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction</b>: <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state FL}\">Florida</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>identifier</b>: <code>https://flhealth.example.gov/csr</code>/CSR-7744</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs state-csr}\">state-csr</span></p><p><b>period</b>: 2023-01-01 --&gt; 2026-12-31</p><p><b>issuer</b>: <a href=\"Organization-org-florida-csr-authority.html\">Organization Florida Department of Health — Controlled Substance Registration</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction</b>: <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state GA}\">Georgia</span></p><p><b>identifier</b>: <code>https://dch.ga.gov/csr</code>/CSR-GA-2219</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs state-csr}\">state-csr</span></p><p><b>period</b>: 2024-03-01 --&gt; 2027-02-28</p><p><b>issuer</b>: <a href=\"Organization-org-florida-csr-authority.html\">Organization Florida Department of Health — Controlled Substance Registration</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "1098765432"
+  }],
+  "name" : [{
+    "family" : "Lopez",
+    "given" : ["Mariana"]
+  }],
+  "qualification" : [{
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state",
+          "code" : "FL",
+          "display" : "Florida"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "active"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "system" : "https://flhealth.example.gov/csr",
+      "value" : "CSR-7744"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "state-csr"
+      }]
+    },
+    "period" : {
+      "start" : "2023-01-01",
+      "end" : "2026-12-31"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-florida-csr-authority"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-jurisdiction",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-usps-state",
+          "code" : "GA",
+          "display" : "Georgia"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "system" : "https://dch.ga.gov/csr",
+      "value" : "CSR-GA-2219"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "state-csr"
+      }]
+    },
+    "period" : {
+      "start" : "2024-03-01",
+      "end" : "2027-02-28"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-florida-csr-authority"
+    }
+  }]
+}

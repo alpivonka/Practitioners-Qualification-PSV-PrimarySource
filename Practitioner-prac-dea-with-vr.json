@@ -1,0 +1,121 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "prac-dea-with-vr",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/psv/StructureDefinition/PSVPractitioner",
+    "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-dea-with-vr</b></p><a name=\"prac-dea-with-vr\"> </a><a name=\"hcprac-dea-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234987654</p><p><b>name</b>: Riya Patel </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs II}\">II</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs III}\">III</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-registrant-type</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs practitioner}\">practitioner</span></p><p><b>identifier</b>: <code>https://www.dea.gov/registration</code>/AB1234567</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs dea}\">dea</span></p><p><b>period</b>: 2024-05-01 --&gt; 2027-04-30</p><p><b>issuer</b>: <a href=\"Organization-org-dea-diversion.html\">Organization DEA Diversion Control Division</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs III}\">III</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs IV}\">IV</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs V}\">V</span></p><p><b>identifier</b>: <code>https://www.dea.gov/registration</code>/BA7654321</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs dea}\">dea</span></p><p><b>period</b>: 2024-07-15 --&gt; 2027-07-14</p><p><b>issuer</b>: <a href=\"Organization-org-dea-diversion.html\">Organization DEA Diversion Control Division</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "1234987654"
+  }],
+  "name" : [{
+    "family" : "Patel",
+    "given" : ["Riya"]
+  }],
+  "qualification" : [{
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "active"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs",
+          "code" : "II"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs",
+          "code" : "III"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/dea-registrant-type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs",
+          "code" : "practitioner"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "system" : "https://www.dea.gov/registration",
+      "value" : "AB1234567"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "dea"
+      }]
+    },
+    "period" : {
+      "start" : "2024-05-01",
+      "end" : "2027-04-30"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-dea-diversion"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs",
+          "code" : "III"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs",
+          "code" : "IV"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs",
+          "code" : "V"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "system" : "https://www.dea.gov/registration",
+      "value" : "BA7654321"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "dea"
+      }]
+    },
+    "period" : {
+      "start" : "2024-07-15",
+      "end" : "2027-07-14"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-dea-diversion"
+    }
+  }]
+}

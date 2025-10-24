@@ -1,0 +1,12 @@
+{
+  "resourceType" : "Organization",
+  "id" : "org-abem",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-abem</b></p><a name=\"org-abem\"> </a><a name=\"hcorg-abem\"> </a><p><b>name</b>: American Board of Emergency Medicine (ABEM)</p><p><b>endpoint</b>: <a href=\"Endpoint-endpoint-abem-verify.html\">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://api.abem.org/verify/fhir</a></p></div>"
+  },
+  "name" : "American Board of Emergency Medicine (ABEM)",
+  "endpoint" : [{
+    "reference" : "Endpoint/endpoint-abem-verify"
+  }]
+}

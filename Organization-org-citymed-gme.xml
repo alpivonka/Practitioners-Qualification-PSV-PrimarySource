@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-citymed-gme"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-citymed-gme</b></p><a name="org-citymed-gme"> </a><a name="hcorg-citymed-gme"> </a><p><b>name</b>: City Medical Center — Graduate Medical Education</p><p><b>endpoint</b>: <a href="Endpoint-endpoint-citymed-gme.html">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://gme.citymed.example.org/fhir</a></p></div>
+  </text>
+  <name value="City Medical Center — Graduate Medical Education"/>
+  <endpoint>
+    <reference value="Endpoint/endpoint-citymed-gme"/>
+  </endpoint>
+</Organization>

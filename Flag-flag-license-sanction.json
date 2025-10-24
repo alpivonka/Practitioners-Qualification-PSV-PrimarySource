@@ -1,0 +1,32 @@
+{
+  "resourceType" : "Flag",
+  "id" : "flag-license-sanction",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Flag flag-license-sanction</b></p><a name=\"flag-license-sanction\"> </a><a name=\"hcflag-license-sanction\"> </a><p><b>org/fhir/uv/psv/StructureDefinition/flag-evidence</b>: <a href=\"VerificationResult-vr-license-suspension.html\">VerificationResult: extension = -&gt;DocumentReference: status = current; type = ; date = 2025-09-15 10:00:00+0000; targetLocation = qualification[license][0]; status = completed; statusDate = 2025-09-15 10:01:00+0000; failureAction = </a></p><p><b>org/fhir/uv/psv/StructureDefinition/flag-targetLocation</b>: qualification[license][0]</p><p><b>status</b>: Active</p><p><b>category</b>: <span title=\"Codes:\">Sanction</span></p><p><b>code</b>: <span title=\"Codes:\">Board suspension</span></p><p><b>subject</b>: <a href=\"Practitioner-prac-sanction-demo.html\">Practitioner Morgan Chavez </a></p><p><b>period</b>: 2025-09-15 --&gt; 2025-12-31</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://example.org/fhir/uv/psv/StructureDefinition/flag-evidence",
+    "valueReference" : {
+      "reference" : "VerificationResult/vr-license-suspension"
+    }
+  },
+  {
+    "url" : "http://example.org/fhir/uv/psv/StructureDefinition/flag-targetLocation",
+    "valueString" : "qualification[license][0]"
+  }],
+  "status" : "active",
+  "category" : [{
+    "text" : "Sanction"
+  }],
+  "code" : {
+    "text" : "Board suspension"
+  },
+  "subject" : {
+    "reference" : "Practitioner/prac-sanction-demo"
+  },
+  "period" : {
+    "start" : "2025-09-15",
+    "end" : "2025-12-31"
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="psv-dea-registrant-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem psv-dea-registrant-type-cs</b></p><a name="psv-dea-registrant-type-cs"> </a><a name="hcpsv-dea-registrant-type-cs"> </a><p>This case-sensitive code system <code>http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">practitioner<a name="psv-dea-registrant-type-cs-practitioner"> </a></td><td>Practitioner</td></tr><tr><td style="white-space:nowrap">midlevel-practitioner<a name="psv-dea-registrant-type-cs-midlevel-practitioner"> </a></td><td>Mid-level Practitioner</td></tr><tr><td style="white-space:nowrap">hospital-clinic<a name="psv-dea-registrant-type-cs-hospital-clinic"> </a></td><td>Hospital/Clinic</td></tr><tr><td style="white-space:nowrap">pharmacy<a name="psv-dea-registrant-type-cs-pharmacy"> </a></td><td>Pharmacy</td></tr><tr><td style="white-space:nowrap">teaching-institution<a name="psv-dea-registrant-type-cs-teaching-institution"> </a></td><td>Teaching Institution</td></tr><tr><td style="white-space:nowrap">narcotic-treatment<a name="psv-dea-registrant-type-cs-narcotic-treatment"> </a></td><td>Narcotic Treatment Program</td></tr><tr><td style="white-space:nowrap">researcher<a name="psv-dea-registrant-type-cs-researcher"> </a></td><td>Researcher</td></tr></table></div>
+  </text>
+  <url value="http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs"/>
+  <version value="1.0.0"/>
+  <name value="PSVDEARegistrantTypeCS"/>
+  <title value="DEA Registrant Type"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="DEA registrant categories relevant to care delivery and dispensing."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="7"/>
+  <concept>
+    <code value="practitioner"/>
+    <display value="Practitioner"/>
+  </concept>
+  <concept>
+    <code value="midlevel-practitioner"/>
+    <display value="Mid-level Practitioner"/>
+  </concept>
+  <concept>
+    <code value="hospital-clinic"/>
+    <display value="Hospital/Clinic"/>
+  </concept>
+  <concept>
+    <code value="pharmacy"/>
+    <display value="Pharmacy"/>
+  </concept>
+  <concept>
+    <code value="teaching-institution"/>
+    <display value="Teaching Institution"/>
+  </concept>
+  <concept>
+    <code value="narcotic-treatment"/>
+    <display value="Narcotic Treatment Program"/>
+  </concept>
+  <concept>
+    <code value="researcher"/>
+    <display value="Researcher"/>
+  </concept>
+</CodeSystem>

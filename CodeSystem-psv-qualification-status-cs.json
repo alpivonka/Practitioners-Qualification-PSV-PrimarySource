@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "psv-qualification-status-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-qualification-status-cs</b></p><a name=\"psv-qualification-status-cs\"> </a><a name=\"hcpsv-qualification-status-cs\"> </a><p>This  code system <code>http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"psv-qualification-status-cs-active\"> </a></td><td>Active</td></tr><tr><td style=\"white-space:nowrap\">inactive<a name=\"psv-qualification-status-cs-inactive\"> </a></td><td>Inactive</td></tr><tr><td style=\"white-space:nowrap\">expired<a name=\"psv-qualification-status-cs-expired\"> </a></td><td>Expired</td></tr><tr><td style=\"white-space:nowrap\">suspended<a name=\"psv-qualification-status-cs-suspended\"> </a></td><td>Suspended</td></tr><tr><td style=\"white-space:nowrap\">restricted<a name=\"psv-qualification-status-cs-restricted\"> </a></td><td>Restricted</td></tr></table></div>"
+  },
+  "url" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+  "version" : "1.0.0",
+  "name" : "PSVQualificationStatusCS",
+  "title" : "Qualification Status",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "content" : "complete",
+  "count" : 5,
+  "concept" : [{
+    "code" : "active",
+    "display" : "Active"
+  },
+  {
+    "code" : "inactive",
+    "display" : "Inactive"
+  },
+  {
+    "code" : "expired",
+    "display" : "Expired"
+  },
+  {
+    "code" : "suspended",
+    "display" : "Suspended"
+  },
+  {
+    "code" : "restricted",
+    "display" : "Restricted"
+  }]
+}

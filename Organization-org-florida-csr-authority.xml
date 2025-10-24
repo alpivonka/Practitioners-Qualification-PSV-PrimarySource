@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-florida-csr-authority"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-florida-csr-authority</b></p><a name="org-florida-csr-authority"> </a><a name="hcorg-florida-csr-authority"> </a><p><b>name</b>: Florida Department of Health — Controlled Substance Registration</p><p><b>endpoint</b>: <a href="Endpoint-endpoint-florida-csr-verify.html">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://api.flhealth.example.gov/csr/fhir</a></p></div>
+  </text>
+  <name value="Florida Department of Health — Controlled Substance Registration"/>
+  <endpoint>
+    <reference value="Endpoint/endpoint-florida-csr-verify"/>
+  </endpoint>
+</Organization>

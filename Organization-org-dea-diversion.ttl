@@ -1,0 +1,23 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Organization/org-dea-diversion> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-dea-diversion"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-dea-diversion</b></p><a name=\"org-dea-diversion\"> </a><a name=\"hcorg-dea-diversion\"> </a><p><b>name</b>: DEA Diversion Control Division</p><p><b>endpoint</b>: <a href=\"Endpoint-endpoint-dea-diversion.html\">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://dea.example.gov/diversion/fhir</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "DEA Diversion Control Division"] ; # 
+  fhir:endpoint ( [
+     fhir:link <http://example.com/fhir/psv/Endpoint/endpoint-dea-diversion> ;
+     fhir:reference [ fhir:v "Endpoint/endpoint-dea-diversion" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

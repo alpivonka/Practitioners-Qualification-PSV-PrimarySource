@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/CodeSystem/psv-training-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "psv-training-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-training-type-cs</b></p><a name=\"psv-training-type-cs\"> </a><a name=\"hcpsv-training-type-cs\"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">residency<a name=\"psv-training-type-cs-residency\"> </a></td><td>Residency</td></tr><tr><td style=\"white-space:nowrap\">fellowship<a name=\"psv-training-type-cs-fellowship\"> </a></td><td>Fellowship</td></tr><tr><td style=\"white-space:nowrap\">internship<a name=\"psv-training-type-cs-internship\"> </a></td><td>Internship</td></tr><tr><td style=\"white-space:nowrap\">transitional-year<a name=\"psv-training-type-cs-transitional-year\"> </a></td><td>Transitional Year</td></tr><tr><td style=\"white-space:nowrap\">preliminary-year<a name=\"psv-training-type-cs-preliminary-year\"> </a></td><td>Preliminary Year</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSVTrainingTypeCS"] ; # 
+  fhir:title [ fhir:v "Training Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-24T14:50:11+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "Types of postgraduate clinical training programs."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "residency" ] ;
+     fhir:display [ fhir:v "Residency" ]
+  ] [
+     fhir:code [ fhir:v "fellowship" ] ;
+     fhir:display [ fhir:v "Fellowship" ]
+  ] [
+     fhir:code [ fhir:v "internship" ] ;
+     fhir:display [ fhir:v "Internship" ]
+  ] [
+     fhir:code [ fhir:v "transitional-year" ] ;
+     fhir:display [ fhir:v "Transitional Year" ]
+  ] [
+     fhir:code [ fhir:v "preliminary-year" ] ;
+     fhir:display [ fhir:v "Preliminary Year" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

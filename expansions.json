@@ -1,0 +1,430 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "1531f3a3-fdd4-4040-902a-dc5a12b1aa28",
+  "meta" : {
+    "lastUpdated" : "2025-10-24T14:50:51.116+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://example.com/fhir/psv/ValueSet/psv-action-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-psv-action-cs.html\">codesystem PSV  Action CodeSystem v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.com/fhir/psv/CodeSystem/psv-action-cs|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-action-cs-record-only\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-action-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-action-cs.html#psv-action-cs-record-only\">record-only</a></td><td>Record Only</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-action-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;record-only&quot;, &quot;display&quot;: &quot;Record Only&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-action-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;record-only&quot;&gt;&lt;display value=&quot;Record Only&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-action-cs-manual-review\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-action-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-action-cs.html#psv-action-cs-manual-review\">manual-review</a></td><td>Manual Review</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-action-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;manual-review&quot;, &quot;display&quot;: &quot;Manual Review&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-action-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;manual-review&quot;&gt;&lt;display value=&quot;Manual Review&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-action-cs-block\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-action-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-action-cs.html#psv-action-cs-block\">block</a></td><td>Block</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-action-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;block&quot;, &quot;display&quot;: &quot;Block&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-action-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;block&quot;&gt;&lt;display value=&quot;Block&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/psv/ValueSet/psv-action-vs",
+      "version" : "1.0.0",
+      "name" : "PSVActionVS",
+      "title" : "PSV Action",
+      "status" : "active",
+      "date" : "2025-10-24T14:50:11+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:d341c873-bb60-433d-9eec-dbdefd8fe9cf",
+        "timestamp" : "2025-10-24T14:51:38+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs|1.0.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs",
+          "code" : "record-only",
+          "display" : "Record Only"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs",
+          "code" : "manual-review",
+          "display" : "Manual Review"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs",
+          "code" : "block",
+          "display" : "Block"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/psv/ValueSet/psv-verification-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-psv-verification-type-cs.html\">codesystem PSV Verification Type CodeSystem v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs-primary-source\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-verification-type-cs.html#psv-verification-type-cs-primary-source\">primary-source</a></td><td>Primary Source</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;primary-source&quot;, &quot;display&quot;: &quot;Primary Source&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;primary-source&quot;&gt;&lt;display value=&quot;Primary Source&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs-attestation\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-verification-type-cs.html#psv-verification-type-cs-attestation\">attestation</a></td><td>Attestation</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;attestation&quot;, &quot;display&quot;: &quot;Attestation&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;attestation&quot;&gt;&lt;display value=&quot;Attestation&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs-other\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-verification-type-cs.html#psv-verification-type-cs-other\">other</a></td><td>Other</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;other&quot;, &quot;display&quot;: &quot;Other&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;other&quot;&gt;&lt;display value=&quot;Other&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/psv/ValueSet/psv-verification-type-vs",
+      "version" : "1.0.0",
+      "name" : "PSVVerificationTypeVS",
+      "title" : "PSV Verification Type",
+      "status" : "active",
+      "date" : "2025-10-24T14:50:11+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:f20cf395-0047-4593-9d45-2c5424fd152b",
+        "timestamp" : "2025-10-24T14:51:38+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "warning-draft",
+          "valueUri" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs|1.0.0"
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs",
+          "code" : "primary-source",
+          "display" : "Primary Source"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs",
+          "code" : "attestation",
+          "display" : "Attestation"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs",
+          "code" : "other",
+          "display" : "Other"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-board-specialty",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-psv-board-specialty-cs.html\">codesystem Board/Training Specialty (Minimal) v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs-IM\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-board-specialty-cs.html#psv-board-specialty-cs-IM\">IM</a></td><td>Internal Medicine</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;IM&quot;, &quot;display&quot;: &quot;Internal Medicine&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;IM&quot;&gt;&lt;display value=&quot;Internal Medicine&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs-EM\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-board-specialty-cs.html#psv-board-specialty-cs-EM\">EM</a></td><td>Emergency Medicine</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;EM&quot;, &quot;display&quot;: &quot;Emergency Medicine&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;EM&quot;&gt;&lt;display value=&quot;Emergency Medicine&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs-CARD\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-board-specialty-cs.html#psv-board-specialty-cs-CARD\">CARD</a></td><td>Cardiovascular Disease</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;CARD&quot;, &quot;display&quot;: &quot;Cardiovascular Disease&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;CARD&quot;&gt;&lt;display value=&quot;Cardiovascular Disease&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-board-specialty",
+      "version" : "1.0.0",
+      "name" : "PSVBoardSpecialtyVS",
+      "title" : "VS — Board/Training Specialty",
+      "status" : "active",
+      "date" : "2025-10-24T14:50:11+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:739e4e32-f70e-427e-baa3-9e57d099de7b",
+        "timestamp" : "2025-10-24T14:51:38+00:00",
+        "total" : 3,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+          "code" : "IM",
+          "display" : "Internal Medicine"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+          "code" : "EM",
+          "display" : "Emergency Medicine"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+          "code" : "CARD",
+          "display" : "Cardiovascular Disease"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-completion-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-psv-completion-status-cs.html\">codesystem Training Completion Status v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs-completed\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-completion-status-cs.html#psv-completion-status-cs-completed\">completed</a></td><td>Completed</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;completed&quot;, &quot;display&quot;: &quot;Completed&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;completed&quot;&gt;&lt;display value=&quot;Completed&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs-in-progress\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-completion-status-cs.html#psv-completion-status-cs-in-progress\">in-progress</a></td><td>In Progress</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;in-progress&quot;, &quot;display&quot;: &quot;In Progress&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;in-progress&quot;&gt;&lt;display value=&quot;In Progress&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs-not-completed\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-completion-status-cs.html#psv-completion-status-cs-not-completed\">not-completed</a></td><td>Not Completed</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;not-completed&quot;, &quot;display&quot;: &quot;Not Completed&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;not-completed&quot;&gt;&lt;display value=&quot;Not Completed&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs-withdrawn\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-completion-status-cs.html#psv-completion-status-cs-withdrawn\">withdrawn</a></td><td>Withdrawn</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;withdrawn&quot;, &quot;display&quot;: &quot;Withdrawn&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;withdrawn&quot;&gt;&lt;display value=&quot;Withdrawn&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs-terminated\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-completion-status-cs.html#psv-completion-status-cs-terminated\">terminated</a></td><td>Terminated</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;terminated&quot;, &quot;display&quot;: &quot;Terminated&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;terminated&quot;&gt;&lt;display value=&quot;Terminated&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-completion-status",
+      "version" : "1.0.0",
+      "name" : "PSVCompletionStatusVS",
+      "title" : "VS — Training Completion Status",
+      "status" : "active",
+      "date" : "2025-10-24T14:50:11+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:39074c27-6b0c-47fe-86c6-6555451707e8",
+        "timestamp" : "2025-10-24T14:51:38+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+          "code" : "completed",
+          "display" : "Completed"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+          "code" : "in-progress",
+          "display" : "In Progress"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+          "code" : "not-completed",
+          "display" : "Not Completed"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+          "code" : "withdrawn",
+          "display" : "Withdrawn"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+          "code" : "terminated",
+          "display" : "Terminated"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.com/fhir/psv/ValueSet/psvVS-qualification-status",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-psv-qualification-status-cs.html\">codesystem Qualification Status v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs-active\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-qualification-status-cs.html#psv-qualification-status-cs-active\">active</a></td><td>Active</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;active&quot;, &quot;display&quot;: &quot;Active&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;active&quot;&gt;&lt;display value=&quot;Active&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs-inactive\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-qualification-status-cs.html#psv-qualification-status-cs-inactive\">inactive</a></td><td>Inactive</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;inactive&quot;, &quot;display&quot;: &quot;Inactive&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;inactive&quot;&gt;&lt;display value=&quot;Inactive&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs-expired\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-qualification-status-cs.html#psv-qualification-status-cs-expired\">expired</a></td><td>Expired</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;expired&quot;, &quot;display&quot;: &quot;Expired&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;expired&quot;&gt;&lt;display value=&quot;Expired&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs-suspended\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-qualification-status-cs.html#psv-qualification-status-cs-suspended\">suspended</a></td><td>Suspended</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;suspended&quot;, &quot;display&quot;: &quot;Suspended&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;suspended&quot;&gt;&lt;display value=&quot;Suspended&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs-restricted\"> </a><code>http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-qualification-status-cs.html#psv-qualification-status-cs-restricted\">restricted</a></td><td>Restricted</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;restricted&quot;, &quot;display&quot;: &quot;Restricted&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;restricted&quot;&gt;&lt;display value=&quot;Restricted&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.com/fhir/psv/ValueSet/psvVS-qualification-status",
+      "version" : "1.0.0",
+      "name" : "PSVQualificationStatusVS",
+      "title" : "VS - Qualification Status",
+      "status" : "active",
+      "date" : "2025-10-24T14:50:11+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:0a0445b6-8fa3-4bb3-a3c4-86b8eb6c499c",
+        "timestamp" : "2025-10-24T14:51:39+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "active",
+          "display" : "Active"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "inactive",
+          "display" : "Inactive"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "expired",
+          "display" : "Expired"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "suspended",
+          "display" : "Suspended"
+        },
+        {
+          "system" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "restricted",
+          "display" : "Restricted"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-psv-training-type-cs.html\">codesystem Training Type v1.0.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs|1.0.0\" title=\"Click to Copy URL\" class=\"btn-copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (en)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs-residency\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-training-type-cs.html#psv-training-type-cs-residency\">residency</a></td><td>Residency</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;residency&quot;, &quot;display&quot;: &quot;Residency&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;residency&quot;&gt;&lt;display value=&quot;Residency&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs-fellowship\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-training-type-cs.html#psv-training-type-cs-fellowship\">fellowship</a></td><td>Fellowship</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;fellowship&quot;, &quot;display&quot;: &quot;Fellowship&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;fellowship&quot;&gt;&lt;display value=&quot;Fellowship&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs-internship\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-training-type-cs.html#psv-training-type-cs-internship\">internship</a></td><td>Internship</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;internship&quot;, &quot;display&quot;: &quot;Internship&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;internship&quot;&gt;&lt;display value=&quot;Internship&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs-transitional-year\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-training-type-cs.html#psv-training-type-cs-transitional-year\">transitional-year</a></td><td>Transitional Year</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;transitional-year&quot;, &quot;display&quot;: &quot;Transitional Year&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;transitional-year&quot;&gt;&lt;display value=&quot;Transitional Year&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr><tr><td><a name=\"x-http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs-preliminary-year\"> </a><code>http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-psv-training-type-cs.html#psv-training-type-cs-preliminary-year\">preliminary-year</a></td><td>Preliminary Year</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;, &quot;version&quot;: &quot;1.0.0&quot;, &quot;code&quot;: &quot;preliminary-year&quot;, &quot;display&quot;: &quot;Preliminary Year&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs&quot;&gt;&lt;version value=&quot;1.0.0&quot;&gt;&lt;code value=&quot;preliminary-year&quot;&gt;&lt;display value=&quot;Preliminary Year&quot;&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type",
+      "version" : "1.0.0",
+      "name" : "PSVTrainingTypeVS",
+      "title" : "VS — Training Type",
+      "status" : "active",
+      "date" : "2025-10-24T14:50:11+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001",
+          "display" : "World"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:018a4766-50dc-4ea9-a9f0-9b32480d3c8a",
+        "timestamp" : "2025-10-24T14:51:39+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "en"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs|1.0.0"
+        }],
+        "contains" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+          "code" : "residency",
+          "display" : "Residency"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+          "code" : "fellowship",
+          "display" : "Fellowship"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+          "code" : "internship",
+          "display" : "Internship"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+          "code" : "transitional-year",
+          "display" : "Transitional Year"
+        },
+        {
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+          "code" : "preliminary-year",
+          "display" : "Preliminary Year"
+        }]
+      }
+    }
+  }]
+}

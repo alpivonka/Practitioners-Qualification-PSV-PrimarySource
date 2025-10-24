@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Practitioner/prac-boards-with-vr> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prac-boards-with-vr"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/psv/StructureDefinition/PSVPractitioner>
+     ] [
+       fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-boards-with-vr</b></p><a name=\"prac-boards-with-vr\"> </a><a name=\"hcprac-boards-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>name</b>: Alex Nguyen </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs IM}\">Internal Medicine</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-subspecialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-subspecialty-cs CARD}\">CARD</span></p><p><b>identifier</b>: ABIM-000111222</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs board}\">board</span></p><p><b>period</b>: 2020-07-01 --&gt; 2030-06-30</p><p><b>issuer</b>: <a href=\"Organization-org-abim.html\">Organization American Board of Internal Medicine (ABIM)</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs EM}\">Emergency Medicine</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>identifier</b>: ABEM-445566</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs board}\">board</span></p><p><b>period</b>: 2019-09-01 --&gt; 2029-08-31</p><p><b>issuer</b>: <a href=\"Organization-org-abem.html\">Organization American Board of Emergency Medicine (ABEM)</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567893" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Nguyen" ] ;
+     fhir:given ( [ fhir:v "Alex" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IM" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-subspecialty"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-board-subspecialty-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CARD" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:value [ fhir:v "ABIM-000111222" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "board" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2030-06-30"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-abim> ;
+       fhir:reference [ fhir:v "Organization/org-abim" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "EM" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "active" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:value [ fhir:v "ABEM-445566" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "board" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2019-09-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2029-08-31"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-abem> ;
+       fhir:reference [ fhir:v "Organization/org-abem" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="prov-sanction-apply"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance prov-sanction-apply</b></p><a name="prov-sanction-apply"> </a><a name="hcprov-sanction-apply"> </a><p>Provenance for: </p><ul><li><a href="Practitioner-prac-sanction-demo.html">Practitioner Morgan Chavez </a></li><li><a href="Flag-flag-license-sanction.html">Flag </a></li></ul><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2025-09-15 10:02:00+0000</td></tr><tr><td>Activity</td><td><span title="Codes:">Update credential status; create Flag</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:">author</span></td><td>PS-Verify Processor</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Practitioner/prac-sanction-demo"/>
+  </target>
+  <target>
+    <reference value="Flag/flag-license-sanction"/>
+  </target>
+  <recorded value="2025-09-15T10:02:00Z"/>
+  <reason>
+    <text value="Apply board suspension to Practitioner license and raise Flag"/>
+  </reason>
+  <activity>
+    <text value="Update credential status; create Flag"/>
+  </activity>
+  <agent>
+    <type>
+      <text value="author"/>
+    </type>
+    <who>
+      <display value="PS-Verify Processor"/>
+    </who>
+  </agent>
+  <entity>
+    <role value="source"/>
+    <what>
+      <reference value="VerificationResult/vr-license-suspension"/>
+    </what>
+  </entity>
+</Provenance>

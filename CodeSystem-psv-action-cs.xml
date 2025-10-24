@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="psv-action-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem psv-action-cs</b></p><a name="psv-action-cs"> </a><a name="hcpsv-action-cs"> </a><p>This  code system <code>http://example.com/fhir/psv/CodeSystem/psv-action-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">record-only<a name="psv-action-cs-record-only"> </a></td><td>Record Only</td></tr><tr><td style="white-space:nowrap">manual-review<a name="psv-action-cs-manual-review"> </a></td><td>Manual Review</td></tr><tr><td style="white-space:nowrap">block<a name="psv-action-cs-block"> </a></td><td>Block</td></tr></table></div>
+  </text>
+  <url value="http://example.com/fhir/psv/CodeSystem/psv-action-cs"/>
+  <version value="1.0.0"/>
+  <name value="PSVActionCS"/>
+  <title value="PSV  Action CodeSystem"/>
+  <status value="draft"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="record-only"/>
+    <display value="Record Only"/>
+  </concept>
+  <concept>
+    <code value="manual-review"/>
+    <display value="Manual Review"/>
+  </concept>
+  <concept>
+    <code value="block"/>
+    <display value="Block"/>
+  </concept>
+</CodeSystem>

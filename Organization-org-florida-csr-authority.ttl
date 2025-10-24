@@ -1,0 +1,23 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Organization/org-florida-csr-authority> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-florida-csr-authority"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-florida-csr-authority</b></p><a name=\"org-florida-csr-authority\"> </a><a name=\"hcorg-florida-csr-authority\"> </a><p><b>name</b>: Florida Department of Health — Controlled Substance Registration</p><p><b>endpoint</b>: <a href=\"Endpoint-endpoint-florida-csr-verify.html\">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://api.flhealth.example.gov/csr/fhir</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "Florida Department of Health — Controlled Substance Registration"] ; # 
+  fhir:endpoint ( [
+     fhir:link <http://example.com/fhir/psv/Endpoint/endpoint-florida-csr-verify> ;
+     fhir:reference [ fhir:v "Endpoint/endpoint-florida-csr-verify" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

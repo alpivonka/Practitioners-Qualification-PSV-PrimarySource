@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "psv-action-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet psv-action-vs</b></p><a name=\"psv-action-vs\"> </a><a name=\"hcpsv-action-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-psv-action-cs.html\"><code>http://example.com/fhir/psv/CodeSystem/psv-action-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://example.com/fhir/psv/ValueSet/psv-action-vs",
+  "version" : "1.0.0",
+  "name" : "PSVActionVS",
+  "title" : "PSV Action",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs"
+    }]
+  }
+}

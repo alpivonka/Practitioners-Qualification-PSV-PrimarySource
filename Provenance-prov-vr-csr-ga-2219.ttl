@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Provenance/prov-vr-csr-ga-2219> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prov-vr-csr-ga-2219"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance prov-vr-csr-ga-2219</b></p><a name=\"prov-vr-csr-ga-2219\"> </a><a name=\"hcprov-vr-csr-ga-2219\"> </a><p>Provenance for <a href=\"VerificationResult-vr-csr-ga-2219.html\">VerificationResult: targetLocation = qualification[state-csr][1]; status = validated; statusDate = 2025-10-21 14:08:00+0000; validationType = state-csr-primary-source</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-10-21 14:09:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}\">Verifier</span></td><td><a href=\"Organization-org-florida-csr-authority.html\">Organization Florida Department of Health — Controlled Substance Registration</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://example.com/fhir/psv/VerificationResult/vr-csr-ga-2219> ;
+     fhir:reference [ fhir:v "VerificationResult/vr-csr-ga-2219" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-10-21T14:09:00Z"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "verifier" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://example.com/fhir/psv/Organization/org-florida-csr-authority> ;
+       fhir:reference [ fhir:v "Organization/org-florida-csr-authority" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:link <http://example.com/fhir/psv/DocumentReference/docref-csr-ga-2219> ;
+       fhir:reference [ fhir:v "DocumentReference/docref-csr-ga-2219" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

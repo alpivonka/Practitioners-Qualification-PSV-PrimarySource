@@ -1,0 +1,68 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSVActionCS",
+      "title" : "PSV  Action CodeSystem",
+      "description" : ""
+    },
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVDEARegistrantTypeCS",
+      "title" : "DEA Registrant Type",
+      "description" : "DEA registrant categories relevant to care delivery and dispensing."
+    },
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVDEAScheduleCS",
+      "title" : "DEA Controlled Substance Schedules (II–V)",
+      "description" : "Subset of U.S. controlled substance schedules commonly applicable to prescribers. Schedule I excluded."
+    },
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVQualificationStatusCS",
+      "title" : "Qualification Status",
+      "description" : ""
+    },
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSVVerificationTypeCS",
+      "title" : "PSV Verification Type CodeSystem",
+      "description" : ""
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVBoardSpecialtyCS",
+      "title" : "Board/Training Specialty (Minimal)",
+      "description" : "Minimal specialty codes used in examples. Replace/expand with your authoritative list."
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVCompletionStatusCS",
+      "title" : "Training Completion Status",
+      "description" : "Completion state for a training program."
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVTrainingTypeCS",
+      "title" : "Training Type",
+      "description" : "Types of postgraduate clinical training programs."
+    }
+  ]
+}

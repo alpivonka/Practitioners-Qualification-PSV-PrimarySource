@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="psvVS-dea-registrant-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet psvVS-dea-registrant-type</b></p><a name="psvVS-dea-registrant-type"> </a><a name="hcpsvVS-dea-registrant-type"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <url value="http://example.com/fhir/psv/ValueSet/psvVS-dea-registrant-type"/>
+  <version value="1.0.0"/>
+  <name value="PSVDEARegistrantTypeVS"/>
+  <title value="VS — DEA Registrant Type"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Allowed DEA registrant categories for practitioner credentialing."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"/>
+    </include>
+  </compose>
+</ValueSet>

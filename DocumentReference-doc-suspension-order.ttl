@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/DocumentReference/doc-suspension-order> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "doc-suspension-order"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference doc-suspension-order</b></p><a name=\"doc-suspension-order\"> </a><a name=\"hcdoc-suspension-order\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Board Order</span></p><p><b>date</b>: 2025-09-15 10:00:00+0000</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://flboard.example/orders/2025-0915.pdf\">https://flboard.example/orders/2025-0915.pdf</a></td><td>Final Order 2025-09-15</td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:text [ fhir:v "Board Order" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-09-15T10:00:00Z"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:url [ fhir:v "https://flboard.example/orders/2025-0915.pdf"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Final Order 2025-09-15" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

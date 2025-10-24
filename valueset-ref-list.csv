@@ -1,0 +1,9 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://example.com/fhir/psv/ValueSet/psv-action-vs,1.0.0,active,,PSVActionVS,PSV Action,"","StructureDefinition/action","Internal"
+http://example.com/fhir/psv/ValueSet/psv-verification-type-vs,1.0.0,active,,PSVVerificationTypeVS,PSV Verification Type,"","StructureDefinition/psv-verificationresult","Internal"
+http://example.com/fhir/psv/ValueSet/psvVS-dea-registrant-type,1.0.0,active,,PSVDEARegistrantTypeVS,VS — DEA Registrant Type,"Allowed DEA registrant categories for practitioner credentialing.",,"Other"
+http://example.com/fhir/psv/ValueSet/psvVS-dea-schedule,1.0.0,active,,PSVDEAScheduleVS,VS — DEA Controlled Substance Schedules (II–V),"Allowed DEA schedules for clinician prescribing context.",,"Other"
+http://example.com/fhir/psv/ValueSet/psvVS-qualification-status,1.0.0,active,,PSVQualificationStatusVS,VS - Qualification Status,"","StructureDefinition/qualification-status","Internal"
+http://example.org/fhir/uv/psv/ValueSet/psvVS-board-specialty,1.0.0,active,,PSVBoardSpecialtyVS,VS — Board/Training Specialty,"Allowed specialties used for training/board examples.","StructureDefinition/qualification-specialty","Internal"
+http://example.org/fhir/uv/psv/ValueSet/psvVS-completion-status,1.0.0,active,,PSVCompletionStatusVS,VS — Training Completion Status,"Allowed values for training completion status.","StructureDefinition/completion-status","Internal"
+http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type,1.0.0,active,,PSVTrainingTypeVS,VS — Training Type,"Allowed training types for practitioner qualifications.","StructureDefinition/training-type","Internal"

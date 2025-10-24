@@ -1,0 +1,18 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "docref-training-fellowship-card",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference docref-training-fellowship-card</b></p><a name=\"docref-training-fellowship-card\"> </a><a name=\"hcdocref-training-fellowship-card\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Fellowship program verification</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>application/json</td><td><a href=\"https://fellowships.heartinst.example.org/verify?program=141-98-76-543&amp;npi=1654321987\">https://fellowships.heartinst.example.org/verify?program=141-98-76-543&amp;npi=1654321987</a></td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "text" : "Fellowship program verification"
+  },
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/json",
+      "url" : "https://fellowships.heartinst.example.org/verify?program=141-98-76-543&npi=1654321987"
+    }
+  }]
+}

@@ -1,0 +1,282 @@
+[
+  {
+    "id" : "psv-action-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs",
+    "version" : "1.0.0",
+    "name" : "PSVActionCS"
+  },
+  {
+    "id" : "psv-dea-registrant-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs",
+    "version" : "1.0.0",
+    "name" : "PSVDEARegistrantTypeCS"
+  },
+  {
+    "id" : "psv-dea-schedule-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs",
+    "version" : "1.0.0",
+    "name" : "PSVDEAScheduleCS"
+  },
+  {
+    "id" : "psv-qualification-status-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+    "version" : "1.0.0",
+    "name" : "PSVQualificationStatusCS"
+  },
+  {
+    "id" : "psv-verification-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs",
+    "version" : "1.0.0",
+    "name" : "PSVVerificationTypeCS"
+  },
+  {
+    "id" : "credentials-psv-primarysource",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.com/fhir/psv/ImplementationGuide/credentials-psv-primarysource",
+    "version" : "1.0.0",
+    "name" : "Credentials_PSV_PrimarySource"
+  },
+  {
+    "id" : "PSVPractitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner",
+    "version" : "1.0.0",
+    "name" : "PSVPractitioner"
+  },
+  {
+    "id" : "action",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/action",
+    "version" : "1.0.0",
+    "name" : "Action"
+  },
+  {
+    "id" : "completion-status",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/completion-status",
+    "version" : "1.0.0",
+    "name" : "CompletionStatus"
+  },
+  {
+    "id" : "flag-evidence",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/flag-evidence",
+    "version" : "1.0.0",
+    "name" : "FlagEvidence"
+  },
+  {
+    "id" : "flag-targetLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/flag-targetLocation",
+    "version" : "1.0.0",
+    "name" : "FlagTargetLocation"
+  },
+  {
+    "id" : "psv-activity-definition",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-activity-definition",
+    "version" : "1.0.0",
+    "name" : "PSVActivityDefinition"
+  },
+  {
+    "id" : "psv-audit-event",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-audit-event",
+    "version" : "1.0.0",
+    "name" : "PSVAuditEvent"
+  },
+  {
+    "id" : "psv-endpoint",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-endpoint",
+    "version" : "1.0.0",
+    "name" : "PSVEndpoint"
+  },
+  {
+    "id" : "psv-evidence-binary",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-evidence-binary",
+    "version" : "1.0.0",
+    "name" : "PSVEvidenceBinary"
+  },
+  {
+    "id" : "psv-evidence-document",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-evidence-document",
+    "version" : "1.0.0",
+    "name" : "PSVEvidenceDocument"
+  },
+  {
+    "id" : "psv-measure",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-measure",
+    "version" : "1.0.0",
+    "name" : "PSVMeasure"
+  },
+  {
+    "id" : "psv-measure-report",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-measure-report",
+    "version" : "1.0.0",
+    "name" : "PSVMeasureReport"
+  },
+  {
+    "id" : "psv-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-organization",
+    "version" : "1.0.0",
+    "name" : "PSVOrganization"
+  },
+  {
+    "id" : "psv-organizationaffiliation",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-organizationaffiliation",
+    "version" : "1.0.0",
+    "name" : "PSVOrganizationAffiliation"
+  },
+  {
+    "id" : "psv-plan-definition",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-plan-definition",
+    "version" : "1.0.0",
+    "name" : "PSVPlanDefinition"
+  },
+  {
+    "id" : "psv-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-practitionerrole",
+    "version" : "1.0.0",
+    "name" : "PSVPractitionerRole"
+  },
+  {
+    "id" : "psv-provenance",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-provenance",
+    "version" : "1.0.0",
+    "name" : "PSVProvenance"
+  },
+  {
+    "id" : "psv-verification-task",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-verification-task",
+    "version" : "1.0.0",
+    "name" : "PSVVerificationTask"
+  },
+  {
+    "id" : "psv-verificationresult",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/psv-verificationresult",
+    "version" : "1.0.0",
+    "name" : "PSVVerificationResult"
+  },
+  {
+    "id" : "qualification-restriction",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/qualification-restriction",
+    "version" : "1.0.0",
+    "name" : "qualification-restriction"
+  },
+  {
+    "id" : "qualification-specialty",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/qualification-specialty",
+    "version" : "1.0.0",
+    "name" : "QualificationSpecialty"
+  },
+  {
+    "id" : "qualification-status",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/qualification-status",
+    "version" : "1.0.0",
+    "name" : "QualificationStatus"
+  },
+  {
+    "id" : "training-type",
+    "type" : "StructureDefinition",
+    "url" : "http://example.com/fhir/psv/StructureDefinition/training-type",
+    "version" : "1.0.0",
+    "name" : "TrainingType"
+  },
+  {
+    "id" : "psv-action-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/psv/ValueSet/psv-action-vs",
+    "version" : "1.0.0",
+    "name" : "PSVActionVS"
+  },
+  {
+    "id" : "psv-verification-type-vs",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/psv/ValueSet/psv-verification-type-vs",
+    "version" : "1.0.0",
+    "name" : "PSVVerificationTypeVS"
+  },
+  {
+    "id" : "psvVS-dea-registrant-type",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/psv/ValueSet/psvVS-dea-registrant-type",
+    "version" : "1.0.0",
+    "name" : "PSVDEARegistrantTypeVS"
+  },
+  {
+    "id" : "psvVS-dea-schedule",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/psv/ValueSet/psvVS-dea-schedule",
+    "version" : "1.0.0",
+    "name" : "PSVDEAScheduleVS"
+  },
+  {
+    "id" : "psvVS-qualification-status",
+    "type" : "ValueSet",
+    "url" : "http://example.com/fhir/psv/ValueSet/psvVS-qualification-status",
+    "version" : "1.0.0",
+    "name" : "PSVQualificationStatusVS"
+  },
+  {
+    "id" : "psv-board-specialty-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+    "version" : "1.0.0",
+    "name" : "PSVBoardSpecialtyCS"
+  },
+  {
+    "id" : "psv-completion-status-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+    "version" : "1.0.0",
+    "name" : "PSVCompletionStatusCS"
+  },
+  {
+    "id" : "psv-training-type-cs",
+    "type" : "CodeSystem",
+    "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+    "version" : "1.0.0",
+    "name" : "PSVTrainingTypeCS"
+  },
+  {
+    "id" : "psvVS-board-specialty",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-board-specialty",
+    "version" : "1.0.0",
+    "name" : "PSVBoardSpecialtyVS"
+  },
+  {
+    "id" : "psvVS-completion-status",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-completion-status",
+    "version" : "1.0.0",
+    "name" : "PSVCompletionStatusVS"
+  },
+  {
+    "id" : "psvVS-training-type",
+    "type" : "ValueSet",
+    "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-training-type",
+    "version" : "1.0.0",
+    "name" : "PSVTrainingTypeVS"
+  }
+]

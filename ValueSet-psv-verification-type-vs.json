@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "psv-verification-type-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet psv-verification-type-vs</b></p><a name=\"psv-verification-type-vs\"> </a><a name=\"hcpsv-verification-type-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-psv-verification-type-cs.html\"><code>http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://example.com/fhir/psv/ValueSet/psv-verification-type-vs",
+  "version" : "1.0.0",
+  "name" : "PSVVerificationTypeVS",
+  "title" : "PSV Verification Type",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs"
+    }]
+  }
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VerificationResult xmlns="http://hl7.org/fhir">
+  <id value="vr-alex-smith-license-2025Q1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: VerificationResult vr-alex-smith-license-2025Q1</b></p><a name="vr-alex-smith-license-2025Q1"> </a><a name="hcvr-alex-smith-license-2025Q1"> </a><p><b>target</b>: <a href="Practitioner-prac-jordan-rivera-license-only.html">Practitioner Jordan Rivera </a></p><p><b>targetLocation</b>: qualification[license][0]</p><p><b>status</b>: Validated</p><p><b>statusDate</b>: 2025-10-21 14:05:00+0000</p><p><b>validationType</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs license-primary-source}">license-primary-source</span></p><h3>PrimarySources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-org-florida-medical-board.html">Organization Florida Board of Medicine</a></td><td><span title="Codes:">API lookup</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/verificationresult-status successful}">successful</span></td><td>2025-10-21 14:05:00+0000</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Practitioner/prac-jordan-rivera-license-only"/>
+  </target>
+  <targetLocation value="qualification[license][0]"/>
+  <status value="validated"/>
+  <statusDate value="2025-10-21T14:05:00Z"/>
+  <validationType>
+    <coding>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs"/>
+      <code value="license-primary-source"/>
+    </coding>
+  </validationType>
+  <primarySource>
+    <who>
+      <reference value="Organization/org-florida-medical-board"/>
+    </who>
+    <communicationMethod>
+      <text value="API lookup"/>
+    </communicationMethod>
+    <validationStatus>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/verificationresult-status"/>
+        <code value="successful"/>
+      </coding>
+      <text value="successful"/>
+    </validationStatus>
+    <validationDate value="2025-10-21T14:05:00Z"/>
+  </primarySource>
+</VerificationResult>

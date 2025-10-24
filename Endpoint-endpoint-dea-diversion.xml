@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Endpoint xmlns="http://hl7.org/fhir">
+  <id value="endpoint-dea-diversion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Endpoint endpoint-dea-diversion</b></p><a name="endpoint-dea-diversion"> </a><a name="hcendpoint-dea-diversion"> </a><p><b>status</b>: Active</p><p><b>connectionType</b>: <a href="http://terminology.hl7.org/6.5.0/CodeSystem-endpoint-connection-type.html#endpoint-connection-type-hl7-fhir-rest">Endpoint Connection Type hl7-fhir-rest</a>: HL7 FHIR</p><p><b>payloadType</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/endpoint-payload-type any}">FHIR Practitioner &amp; VerificationResult</span></p><p><b>payloadMimeType</b>: application/fhir+json</p><p><b>address</b>: <a href="https://dea.example.gov/diversion/fhir">https://dea.example.gov/diversion/fhir</a></p></div>
+  </text>
+  <status value="active"/>
+  <connectionType>
+    <system value="http://terminology.hl7.org/CodeSystem/endpoint-connection-type"/>
+    <code value="hl7-fhir-rest"/>
+  </connectionType>
+  <payloadType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/endpoint-payload-type"/>
+      <code value="any"/>
+    </coding>
+    <text value="FHIR Practitioner &amp; VerificationResult"/>
+  </payloadType>
+  <payloadMimeType value="application/fhir+json"/>
+  <address value="https://dea.example.gov/diversion/fhir"/>
+</Endpoint>

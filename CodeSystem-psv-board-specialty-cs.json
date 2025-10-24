@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "psv-board-specialty-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-board-specialty-cs</b></p><a name=\"psv-board-specialty-cs\"> </a><a name=\"hcpsv-board-specialty-cs\"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IM<a name=\"psv-board-specialty-cs-IM\"> </a></td><td>Internal Medicine</td></tr><tr><td style=\"white-space:nowrap\">EM<a name=\"psv-board-specialty-cs-EM\"> </a></td><td>Emergency Medicine</td></tr><tr><td style=\"white-space:nowrap\">CARD<a name=\"psv-board-specialty-cs-CARD\"> </a></td><td>Cardiovascular Disease</td></tr></table></div>"
+  },
+  "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+  "version" : "1.0.0",
+  "name" : "PSVBoardSpecialtyCS",
+  "title" : "Board/Training Specialty (Minimal)",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Minimal specialty codes used in examples. Replace/expand with your authoritative list.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 3,
+  "concept" : [{
+    "code" : "IM",
+    "display" : "Internal Medicine"
+  },
+  {
+    "code" : "EM",
+    "display" : "Emergency Medicine"
+  },
+  {
+    "code" : "CARD",
+    "display" : "Cardiovascular Disease"
+  }]
+}

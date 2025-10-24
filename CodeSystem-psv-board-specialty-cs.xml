@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="psv-board-specialty-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem psv-board-specialty-cs</b></p><a name="psv-board-specialty-cs"> </a><a name="hcpsv-board-specialty-cs"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IM<a name="psv-board-specialty-cs-IM"> </a></td><td>Internal Medicine</td></tr><tr><td style="white-space:nowrap">EM<a name="psv-board-specialty-cs-EM"> </a></td><td>Emergency Medicine</td></tr><tr><td style="white-space:nowrap">CARD<a name="psv-board-specialty-cs-CARD"> </a></td><td>Cardiovascular Disease</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"/>
+  <version value="1.0.0"/>
+  <name value="PSVBoardSpecialtyCS"/>
+  <title value="Board/Training Specialty (Minimal)"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Minimal specialty codes used in examples. Replace/expand with your authoritative list."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="IM"/>
+    <display value="Internal Medicine"/>
+  </concept>
+  <concept>
+    <code value="EM"/>
+    <display value="Emergency Medicine"/>
+  </concept>
+  <concept>
+    <code value="CARD"/>
+    <display value="Cardiovascular Disease"/>
+  </concept>
+</CodeSystem>

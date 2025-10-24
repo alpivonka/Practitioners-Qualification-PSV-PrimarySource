@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="prac-dea-with-vr"/>
+  <meta>
+    <profile value="http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"/>
+    <profile value="http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner prac-dea-with-vr</b></p><a name="prac-dea-with-vr"> </a><a name="hcprac-dea-with-vr"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-PSVPractitioner.html">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.5.0/NamingSystem-npi.html" title="National Provider Identifier">United States National Provider Identifier</a>/1234987654</p><p><b>name</b>: Riya Patel </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}">active</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs II}">II</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs III}">III</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-registrant-type</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs practitioner}">practitioner</span></p><p><b>identifier</b>: <code>https://www.dea.gov/registration</code>/AB1234567</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs dea}">dea</span></p><p><b>period</b>: 2024-05-01 --&gt; 2027-04-30</p><p><b>issuer</b>: <a href="Organization-org-dea-diversion.html">Organization DEA Diversion Control Division</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs III}">III</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs IV}">IV</span></p><p><b>org/fhir/uv/psv/StructureDefinition/dea-schedules</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs V}">V</span></p><p><b>identifier</b>: <code>https://www.dea.gov/registration</code>/BA7654321</p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs dea}">dea</span></p><p><b>period</b>: 2024-07-15 --&gt; 2027-07-14</p><p><b>issuer</b>: <a href="Organization-org-dea-diversion.html">Organization DEA Diversion Control Division</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="1234987654"/>
+  </identifier>
+  <name>
+    <family value="Patel"/>
+    <given value="Riya"/>
+  </name>
+  <qualification>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/qualification-status">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"/>
+          <code value="active"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"/>
+          <code value="II"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"/>
+          <code value="III"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/dea-registrant-type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"/>
+          <code value="practitioner"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="https://www.dea.gov/registration"/>
+      <value value="AB1234567"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"/>
+        <code value="dea"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2024-05-01"/>
+      <end value="2027-04-30"/>
+    </period>
+    <issuer>
+      <reference value="Organization/org-dea-diversion"/>
+    </issuer>
+  </qualification>
+  <qualification>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"/>
+          <code value="III"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"/>
+          <code value="IV"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/dea-schedules">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"/>
+          <code value="V"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="https://www.dea.gov/registration"/>
+      <value value="BA7654321"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"/>
+        <code value="dea"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2024-07-15"/>
+      <end value="2027-07-14"/>
+    </period>
+    <issuer>
+      <reference value="Organization/org-dea-diversion"/>
+    </issuer>
+  </qualification>
+</Practitioner>

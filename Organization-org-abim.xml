@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-abim"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-abim</b></p><a name="org-abim"> </a><a name="hcorg-abim"> </a><p><b>name</b>: American Board of Internal Medicine (ABIM)</p><p><b>endpoint</b>: <a href="Endpoint-endpoint-abim-verify.html">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://verify.abim.org/fhir</a></p></div>
+  </text>
+  <name value="American Board of Internal Medicine (ABIM)"/>
+  <endpoint>
+    <reference value="Endpoint/endpoint-abim-verify"/>
+  </endpoint>
+</Organization>

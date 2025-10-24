@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="psv-completion-status-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem psv-completion-status-cs</b></p><a name="psv-completion-status-cs"> </a><a name="hcpsv-completion-status-cs"> </a><p>This case-sensitive code system <code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">completed<a name="psv-completion-status-cs-completed"> </a></td><td>Completed</td></tr><tr><td style="white-space:nowrap">in-progress<a name="psv-completion-status-cs-in-progress"> </a></td><td>In Progress</td></tr><tr><td style="white-space:nowrap">not-completed<a name="psv-completion-status-cs-not-completed"> </a></td><td>Not Completed</td></tr><tr><td style="white-space:nowrap">withdrawn<a name="psv-completion-status-cs-withdrawn"> </a></td><td>Withdrawn</td></tr><tr><td style="white-space:nowrap">terminated<a name="psv-completion-status-cs-terminated"> </a></td><td>Terminated</td></tr></table></div>
+  </text>
+  <url value="http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"/>
+  <version value="1.0.0"/>
+  <name value="PSVCompletionStatusCS"/>
+  <title value="Training Completion Status"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Completion state for a training program."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="completed"/>
+    <display value="Completed"/>
+  </concept>
+  <concept>
+    <code value="in-progress"/>
+    <display value="In Progress"/>
+  </concept>
+  <concept>
+    <code value="not-completed"/>
+    <display value="Not Completed"/>
+  </concept>
+  <concept>
+    <code value="withdrawn"/>
+    <display value="Withdrawn"/>
+  </concept>
+  <concept>
+    <code value="terminated"/>
+    <display value="Terminated"/>
+  </concept>
+</CodeSystem>

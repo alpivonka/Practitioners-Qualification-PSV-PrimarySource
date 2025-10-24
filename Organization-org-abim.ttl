@@ -1,0 +1,23 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Organization/org-abim> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-abim"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-abim</b></p><a name=\"org-abim\"> </a><a name=\"hcorg-abim\"> </a><p><b>name</b>: American Board of Internal Medicine (ABIM)</p><p><b>endpoint</b>: <a href=\"Endpoint-endpoint-abim-verify.html\">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://verify.abim.org/fhir</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "American Board of Internal Medicine (ABIM)"] ; # 
+  fhir:endpoint ( [
+     fhir:link <http://example.com/fhir/psv/Endpoint/endpoint-abim-verify> ;
+     fhir:reference [ fhir:v "Endpoint/endpoint-abim-verify" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

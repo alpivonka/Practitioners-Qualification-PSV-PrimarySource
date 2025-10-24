@@ -1,0 +1,53 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "prac-sanction-demo",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-sanction-demo</b></p><a name=\"prac-sanction-demo\"> </a><a name=\"hcprac-sanction-demo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>name</b>: Morgan Chavez </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs suspended}\">suspended</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-restriction</b>: <span title=\"Codes:\">No direct patient care until 2025-12-31</span></p><p><b>identifier</b>: <code>https://flboard.gov/license</code>/ME-445566</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs license}\">license</span></p><p><b>period</b>: 2022-01-01 --&gt; 2026-12-31</p><p><b>issuer</b>: <a href=\"Organization-org-florida-medical-board.html\">Organization Florida Board of Medicine</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "1234567893"
+  }],
+  "name" : [{
+    "family" : "Chavez",
+    "given" : ["Morgan"]
+  }],
+  "qualification" : [{
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "suspended"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-restriction",
+      "valueCodeableConcept" : {
+        "text" : "No direct patient care until 2025-12-31"
+      }
+    }],
+    "identifier" : [{
+      "system" : "https://flboard.gov/license",
+      "value" : "ME-445566"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "license"
+      }]
+    },
+    "period" : {
+      "start" : "2022-01-01",
+      "end" : "2026-12-31"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-florida-medical-board"
+    }
+  }]
+}

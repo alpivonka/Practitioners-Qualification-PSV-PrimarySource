@@ -1,0 +1,92 @@
+{
+  "resourceType" : "Practitioner",
+  "id" : "prac-boards-with-vr",
+  "meta" : {
+    "profile" : ["http://example.com/fhir/psv/StructureDefinition/PSVPractitioner",
+    "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-boards-with-vr</b></p><a name=\"prac-boards-with-vr\"> </a><a name=\"hcprac-boards-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1234567893</p><p><b>name</b>: Alex Nguyen </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs IM}\">Internal Medicine</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-subspecialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-subspecialty-cs CARD}\">CARD</span></p><p><b>identifier</b>: ABIM-000111222</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs board}\">board</span></p><p><b>period</b>: 2020-07-01 --&gt; 2030-06-30</p><p><b>issuer</b>: <a href=\"Organization-org-abim.html\">Organization American Board of Internal Medicine (ABIM)</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs EM}\">Emergency Medicine</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>identifier</b>: ABEM-445566</p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs board}\">board</span></p><p><b>period</b>: 2019-09-01 --&gt; 2029-08-31</p><p><b>issuer</b>: <a href=\"Organization-org-abem.html\">Organization American Board of Emergency Medicine (ABEM)</a></p></blockquote></div>"
+  },
+  "identifier" : [{
+    "system" : "http://hl7.org/fhir/sid/us-npi",
+    "value" : "1234567893"
+  }],
+  "name" : [{
+    "family" : "Nguyen",
+    "given" : ["Alex"]
+  }],
+  "qualification" : [{
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+          "code" : "IM"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-subspecialty",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-subspecialty-cs",
+          "code" : "CARD"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "value" : "ABIM-000111222"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "board"
+      }]
+    },
+    "period" : {
+      "start" : "2020-07-01",
+      "end" : "2030-06-30"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-abim"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+          "code" : "EM"
+        }]
+      }
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs",
+          "code" : "active"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "value" : "ABEM-445566"
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs",
+        "code" : "board"
+      }]
+    },
+    "period" : {
+      "start" : "2019-09-01",
+      "end" : "2029-08-31"
+    },
+    "issuer" : {
+      "reference" : "Organization/org-abem"
+    }
+  }]
+}

@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "psv-dea-registrant-type-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-dea-registrant-type-cs</b></p><a name=\"psv-dea-registrant-type-cs\"> </a><a name=\"hcpsv-dea-registrant-type-cs\"> </a><p>This case-sensitive code system <code>http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">practitioner<a name=\"psv-dea-registrant-type-cs-practitioner\"> </a></td><td>Practitioner</td></tr><tr><td style=\"white-space:nowrap\">midlevel-practitioner<a name=\"psv-dea-registrant-type-cs-midlevel-practitioner\"> </a></td><td>Mid-level Practitioner</td></tr><tr><td style=\"white-space:nowrap\">hospital-clinic<a name=\"psv-dea-registrant-type-cs-hospital-clinic\"> </a></td><td>Hospital/Clinic</td></tr><tr><td style=\"white-space:nowrap\">pharmacy<a name=\"psv-dea-registrant-type-cs-pharmacy\"> </a></td><td>Pharmacy</td></tr><tr><td style=\"white-space:nowrap\">teaching-institution<a name=\"psv-dea-registrant-type-cs-teaching-institution\"> </a></td><td>Teaching Institution</td></tr><tr><td style=\"white-space:nowrap\">narcotic-treatment<a name=\"psv-dea-registrant-type-cs-narcotic-treatment\"> </a></td><td>Narcotic Treatment Program</td></tr><tr><td style=\"white-space:nowrap\">researcher<a name=\"psv-dea-registrant-type-cs-researcher\"> </a></td><td>Researcher</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://example.com/fhir/psv/CodeSystem/psv-dea-registrant-type-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PSVDEARegistrantTypeCS"] ; # 
+  fhir:title [ fhir:v "DEA Registrant Type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2025-10-24T14:50:11+00:00"^^xsd:dateTime] ; # 
+  fhir:description [ fhir:v "DEA registrant categories relevant to care delivery and dispensing."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "practitioner" ] ;
+     fhir:display [ fhir:v "Practitioner" ]
+  ] [
+     fhir:code [ fhir:v "midlevel-practitioner" ] ;
+     fhir:display [ fhir:v "Mid-level Practitioner" ]
+  ] [
+     fhir:code [ fhir:v "hospital-clinic" ] ;
+     fhir:display [ fhir:v "Hospital/Clinic" ]
+  ] [
+     fhir:code [ fhir:v "pharmacy" ] ;
+     fhir:display [ fhir:v "Pharmacy" ]
+  ] [
+     fhir:code [ fhir:v "teaching-institution" ] ;
+     fhir:display [ fhir:v "Teaching Institution" ]
+  ] [
+     fhir:code [ fhir:v "narcotic-treatment" ] ;
+     fhir:display [ fhir:v "Narcotic Treatment Program" ]
+  ] [
+     fhir:code [ fhir:v "researcher" ] ;
+     fhir:display [ fhir:v "Researcher" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

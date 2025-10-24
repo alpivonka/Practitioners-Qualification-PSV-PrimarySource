@@ -1,0 +1,20 @@
+{
+  "resourceType" : "DocumentReference",
+  "id" : "doc-suspension-order",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference doc-suspension-order</b></p><a name=\"doc-suspension-order\"> </a><a name=\"hcdoc-suspension-order\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:\">Board Order</span></p><p><b>date</b>: 2025-09-15 10:00:00+0000</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><a href=\"https://flboard.example/orders/2025-0915.pdf\">https://flboard.example/orders/2025-0915.pdf</a></td><td>Final Order 2025-09-15</td></tr></table></blockquote></div>"
+  },
+  "status" : "current",
+  "type" : {
+    "text" : "Board Order"
+  },
+  "date" : "2025-09-15T10:00:00Z",
+  "content" : [{
+    "attachment" : {
+      "contentType" : "application/pdf",
+      "url" : "https://flboard.example/orders/2025-0915.pdf",
+      "title" : "Final Order 2025-09-15"
+    }
+  }]
+}

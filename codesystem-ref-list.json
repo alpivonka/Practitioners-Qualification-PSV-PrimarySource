@@ -1,0 +1,70 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-action-cs",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSVActionCS",
+      "title" : "PSV  Action CodeSystem",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-psv-action-vs.html" : "PSV Action"
+    },
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVQualificationStatusCS",
+      "title" : "Qualification Status",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-psvVS-qualification-status.html" : "VS - Qualification Status"
+    },
+    {
+      "url" : "http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "PSVVerificationTypeCS",
+      "title" : "PSV Verification Type CodeSystem",
+      "description" : "",
+      "uses" : {
+      },
+      "ValueSet-psv-verification-type-vs.html" : "PSV Verification Type"
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVBoardSpecialtyCS",
+      "title" : "Board/Training Specialty (Minimal)",
+      "description" : "Minimal specialty codes used in examples. Replace/expand with your authoritative list.",
+      "uses" : {
+      },
+      "ValueSet-psvVS-board-specialty.html" : "VS — Board/Training Specialty"
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVCompletionStatusCS",
+      "title" : "Training Completion Status",
+      "description" : "Completion state for a training program.",
+      "uses" : {
+      },
+      "ValueSet-psvVS-completion-status.html" : "VS — Training Completion Status"
+    },
+    {
+      "url" : "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "PSVTrainingTypeCS",
+      "title" : "Training Type",
+      "description" : "Types of postgraduate clinical training programs.",
+      "uses" : {
+      },
+      "ValueSet-psvVS-training-type.html" : "VS — Training Type"
+    }
+  ]
+}

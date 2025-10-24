@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "psvVS-completion-status",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet psvVS-completion-status</b></p><a name=\"psvVS-completion-status\"> </a><a name=\"hcpsvVS-completion-status\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-psv-completion-status-cs.html\"><code>http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;1.0.0</span></li></ul></div>"
+  },
+  "url" : "http://example.org/fhir/uv/psv/ValueSet/psvVS-completion-status",
+  "version" : "1.0.0",
+  "name" : "PSVCompletionStatusVS",
+  "title" : "VS — Training Completion Status",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Allowed values for training completion status.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"
+    }]
+  }
+}

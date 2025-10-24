@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VerificationResult xmlns="http://hl7.org/fhir">
+  <id value="vr-csr-ga-2219"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: VerificationResult vr-csr-ga-2219</b></p><a name="vr-csr-ga-2219"> </a><a name="hcvr-csr-ga-2219"> </a><p><b>target</b>: <a href="Practitioner-prac-state-csr-with-vr.html">Practitioner Mariana Lopez </a></p><p><b>targetLocation</b>: qualification[state-csr][1]</p><p><b>status</b>: Validated</p><p><b>statusDate</b>: 2025-10-21 14:08:00+0000</p><p><b>validationType</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs state-csr-primary-source}">state-csr-primary-source</span></p><h3>PrimarySources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-org-florida-csr-authority.html">Organization Florida Department of Health — Controlled Substance Registration</a></td><td><span title="Codes:">API lookup</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/verificationresult-status successful}">successful</span></td><td>2025-10-21</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Practitioner/prac-state-csr-with-vr"/>
+  </target>
+  <targetLocation value="qualification[state-csr][1]"/>
+  <status value="validated"/>
+  <statusDate value="2025-10-21T14:08:00Z"/>
+  <validationType>
+    <coding>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs"/>
+      <code value="state-csr-primary-source"/>
+    </coding>
+  </validationType>
+  <primarySource>
+    <who>
+      <reference value="Organization/org-florida-csr-authority"/>
+    </who>
+    <communicationMethod>
+      <text value="API lookup"/>
+    </communicationMethod>
+    <validationStatus>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/verificationresult-status"/>
+        <code value="successful"/>
+      </coding>
+    </validationStatus>
+    <validationDate value="2025-10-21"/>
+  </primarySource>
+</VerificationResult>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="org-dea-diversion"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization org-dea-diversion</b></p><a name="org-dea-diversion"> </a><a name="hcorg-dea-diversion"> </a><p><b>name</b>: DEA Diversion Control Division</p><p><b>endpoint</b>: <a href="Endpoint-endpoint-dea-diversion.html">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://dea.example.gov/diversion/fhir</a></p></div>
+  </text>
+  <name value="DEA Diversion Control Division"/>
+  <endpoint>
+    <reference value="Endpoint/endpoint-dea-diversion"/>
+  </endpoint>
+</Organization>

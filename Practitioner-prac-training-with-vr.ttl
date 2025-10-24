@@ -1,0 +1,145 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Practitioner/prac-training-with-vr> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prac-training-with-vr"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/psv/StructureDefinition/PSVPractitioner>
+     ] [
+       fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-training-with-vr</b></p><a name=\"prac-training-with-vr\"> </a><a name=\"hcprac-training-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1654321987</p><p><b>name</b>: Taylor Garcia </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/training-type</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs residency}\">Residency</span></p><p><b>org/fhir/uv/psv/StructureDefinition/acgme-program-id</b>: <code>https://apps.acgme.org/ads/Public/Programs/Search</code>/140-12-34-567</p><p><b>org/fhir/uv/psv/StructureDefinition/completion-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs completed}\">Completed</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs IM}\">Internal Medicine</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs training}\">training</span></p><p><b>period</b>: 2017-07-01 --&gt; 2020-06-30</p><p><b>issuer</b>: <a href=\"Organization-org-citymed-gme.html\">Organization City Medical Center — Graduate Medical Education</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/training-type</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs fellowship}\">Fellowship</span></p><p><b>org/fhir/uv/psv/StructureDefinition/acgme-program-id</b>: <code>https://apps.acgme.org/ads/Public/Programs/Search</code>/141-98-76-543</p><p><b>org/fhir/uv/psv/StructureDefinition/completion-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs completed}\">Completed</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs CARD}\">Cardiovascular Disease</span></p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs training}\">training</span></p><p><b>period</b>: 2020-07-01 --&gt; 2023-06-30</p><p><b>issuer</b>: <a href=\"Organization-org-heart-institute.html\">Organization National Heart Institute</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1654321987" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Garcia" ] ;
+     fhir:given ( [ fhir:v "Taylor" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/training-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "residency" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/acgme-program-id"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://apps.acgme.org/ads/Public/Programs/Search"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "140-12-34-567" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/completion-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "completed" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IM" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "active" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "training" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2017-07-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2020-06-30"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-citymed-gme> ;
+       fhir:reference [ fhir:v "Organization/org-citymed-gme" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/training-type"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "fellowship" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/acgme-program-id"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "https://apps.acgme.org/ads/Public/Programs/Search"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "141-98-76-543" ]
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/completion-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "completed" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "CARD" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "training" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-07-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2023-06-30"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-heart-institute> ;
+       fhir:reference [ fhir:v "Organization/org-heart-institute" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

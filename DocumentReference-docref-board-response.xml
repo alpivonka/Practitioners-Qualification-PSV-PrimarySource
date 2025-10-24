@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DocumentReference xmlns="http://hl7.org/fhir">
+  <id value="docref-board-response"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DocumentReference docref-board-response</b></p><a name="docref-board-response"> </a><a name="hcdocref-board-response"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title="Codes:">Board verification lookup result</span></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class="grid"><tr><td style="display: none">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style="display: none">*</td><td>application/json</td><td><a href="https://api.stateboard.example.gov/verify?license=MD-987654321&amp;npi=1234567893">https://api.stateboard.example.gov/verify?license=MD-987654321&amp;npi=1234567893</a></td></tr></table></blockquote></div>
+  </text>
+  <status value="current"/>
+  <type>
+    <text value="Board verification lookup result"/>
+  </type>
+  <content>
+    <attachment>
+      <contentType value="application/json"/>
+      <url value="https://api.stateboard.example.gov/verify?license=MD-987654321&amp;npi=1234567893"/>
+    </attachment>
+  </content>
+</DocumentReference>

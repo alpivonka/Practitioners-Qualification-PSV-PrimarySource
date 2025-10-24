@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="prov-vr-training-fellowship-card"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance prov-vr-training-fellowship-card</b></p><a name="prov-vr-training-fellowship-card"> </a><a name="hcprov-vr-training-fellowship-card"> </a><p>Provenance for <a href="VerificationResult-vr-training-fellowship-card.html">VerificationResult: targetLocation = qualification[training][1]; status = validated; statusDate = 2025-10-21 12:30:00+0000; validationType = training-primary-source</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2025-10-21 12:31:00+0000</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}">Verifier</span></td><td><a href="Organization-org-heart-institute.html">Organization National Heart Institute</a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="VerificationResult/vr-training-fellowship-card"/>
+  </target>
+  <recorded value="2025-10-21T12:31:00Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="verifier"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/org-heart-institute"/>
+    </who>
+  </agent>
+  <entity>
+    <role value="source"/>
+    <what>
+      <reference value="DocumentReference/docref-training-fellowship-card"/>
+    </what>
+  </entity>
+</Provenance>

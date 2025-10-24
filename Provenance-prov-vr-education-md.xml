@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="prov-vr-education-md"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance prov-vr-education-md</b></p><a name="prov-vr-education-md"> </a><a name="hcprov-vr-education-md"> </a><p>Provenance for <a href="VerificationResult-vr-education-md.html">VerificationResult: targetLocation = qualification[education][0]; status = validated; statusDate = 2025-10-21 13:55:00+0000; validationType = education-primary-source</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2025-10-21 13:56:00+0000</td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}">Verifier</span></td><td><a href="Organization-org-state-university-med.html">Organization State University College of Medicine</a></td></tr></table></div>
+  </text>
+  <target>
+    <reference value="VerificationResult/vr-education-md"/>
+  </target>
+  <recorded value="2025-10-21T13:56:00Z"/>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="verifier"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Organization/org-state-university-med"/>
+    </who>
+  </agent>
+  <entity>
+    <role value="source"/>
+    <what>
+      <reference value="DocumentReference/docref-education-md"/>
+    </what>
+  </entity>
+</Provenance>

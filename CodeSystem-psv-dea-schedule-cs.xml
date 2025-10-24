@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="psv-dea-schedule-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem psv-dea-schedule-cs</b></p><a name="psv-dea-schedule-cs"> </a><a name="hcpsv-dea-schedule-cs"> </a><p>This case-sensitive code system <code>http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">II<a name="psv-dea-schedule-cs-II"> </a></td><td>Schedule II</td></tr><tr><td style="white-space:nowrap">III<a name="psv-dea-schedule-cs-III"> </a></td><td>Schedule III</td></tr><tr><td style="white-space:nowrap">IV<a name="psv-dea-schedule-cs-IV"> </a></td><td>Schedule IV</td></tr><tr><td style="white-space:nowrap">V<a name="psv-dea-schedule-cs-V"> </a></td><td>Schedule V</td></tr></table></div>
+  </text>
+  <url value="http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs"/>
+  <version value="1.0.0"/>
+  <name value="PSVDEAScheduleCS"/>
+  <title value="DEA Controlled Substance Schedules (II–V)"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Subset of U.S. controlled substance schedules commonly applicable to prescribers. Schedule I excluded."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="II"/>
+    <display value="Schedule II"/>
+  </concept>
+  <concept>
+    <code value="III"/>
+    <display value="Schedule III"/>
+  </concept>
+  <concept>
+    <code value="IV"/>
+    <display value="Schedule IV"/>
+  </concept>
+  <concept>
+    <code value="V"/>
+    <display value="Schedule V"/>
+  </concept>
+</CodeSystem>

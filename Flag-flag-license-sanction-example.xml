@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Flag xmlns="http://hl7.org/fhir">
+  <id value="flag-license-sanction-example"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Flag flag-license-sanction-example</b></p><a name="flag-license-sanction-example"> </a><a name="hcflag-license-sanction-example"> </a><p><b>Flag Evidence (VerificationResult link)</b>: <a href="VerificationResult-vr-license-suspension.html">VerificationResult: extension = -&gt;DocumentReference: status = current; type = ; date = 2025-09-15 10:00:00+0000; targetLocation = qualification[license][0]; status = completed; statusDate = 2025-09-15 10:01:00+0000; failureAction = </a></p><p><b>Flag Target Location (element path)</b>: qualification[license][0]</p><p><b>status</b>: Active</p><p><b>category</b>: <span title="Codes:">Sanction</span></p><p><b>code</b>: <span title="Codes:">Board suspension</span></p><p><b>subject</b>: <a href="Practitioner-prac-sanction-demo.html">Practitioner Morgan Chavez </a></p><p><b>period</b>: 2025-09-15 --&gt; 2025-12-31</p></div>
+  </text>
+  <extension url="http://example.com/fhir/psv/StructureDefinition/flag-evidence">
+    <valueReference>
+      <reference value="VerificationResult/vr-license-suspension"/>
+    </valueReference>
+  </extension>
+  <extension url="http://example.com/fhir/psv/StructureDefinition/flag-targetLocation">
+    <valueString value="qualification[license][0]"/>
+  </extension>
+  <status value="active"/>
+  <category>
+    <text value="Sanction"/>
+  </category>
+  <code>
+    <text value="Board suspension"/>
+  </code>
+  <subject>
+    <reference value="Practitioner/prac-sanction-demo"/>
+  </subject>
+  <period>
+    <start value="2025-09-15"/>
+    <end value="2025-12-31"/>
+  </period>
+</Flag>

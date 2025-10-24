@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="prac-training-with-vr"/>
+  <meta>
+    <profile value="http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"/>
+    <profile value="http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner prac-training-with-vr</b></p><a name="prac-training-with-vr"> </a><a name="hcprac-training-with-vr"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profiles: <a href="StructureDefinition-PSVPractitioner.html">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href="http://terminology.hl7.org/6.5.0/NamingSystem-npi.html" title="National Provider Identifier">United States National Provider Identifier</a>/1654321987</p><p><b>name</b>: Taylor Garcia </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/training-type</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs residency}">Residency</span></p><p><b>org/fhir/uv/psv/StructureDefinition/acgme-program-id</b>: <code>https://apps.acgme.org/ads/Public/Programs/Search</code>/140-12-34-567</p><p><b>org/fhir/uv/psv/StructureDefinition/completion-status</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs completed}">Completed</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs IM}">Internal Medicine</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}">active</span></p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs training}">training</span></p><p><b>period</b>: 2017-07-01 --&gt; 2020-06-30</p><p><b>issuer</b>: <a href="Organization-org-citymed-gme.html">Organization City Medical Center — Graduate Medical Education</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/training-type</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs fellowship}">Fellowship</span></p><p><b>org/fhir/uv/psv/StructureDefinition/acgme-program-id</b>: <code>https://apps.acgme.org/ads/Public/Programs/Search</code>/141-98-76-543</p><p><b>org/fhir/uv/psv/StructureDefinition/completion-status</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs completed}">Completed</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-specialty</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs CARD}">Cardiovascular Disease</span></p><p><b>code</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs training}">training</span></p><p><b>period</b>: 2020-07-01 --&gt; 2023-06-30</p><p><b>issuer</b>: <a href="Organization-org-heart-institute.html">Organization National Heart Institute</a></p></blockquote></div>
+  </text>
+  <identifier>
+    <system value="http://hl7.org/fhir/sid/us-npi"/>
+    <value value="1654321987"/>
+  </identifier>
+  <name>
+    <family value="Garcia"/>
+    <given value="Taylor"/>
+  </name>
+  <qualification>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/training-type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"/>
+          <code value="residency"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/acgme-program-id">
+      <valueIdentifier>
+        <system value="https://apps.acgme.org/ads/Public/Programs/Search"/>
+        <value value="140-12-34-567"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/completion-status">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"/>
+          <code value="completed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"/>
+          <code value="IM"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/qualification-status">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"/>
+          <code value="active"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"/>
+        <code value="training"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2017-07-01"/>
+      <end value="2020-06-30"/>
+    </period>
+    <issuer>
+      <reference value="Organization/org-citymed-gme"/>
+    </issuer>
+  </qualification>
+  <qualification>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/training-type">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs"/>
+          <code value="fellowship"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/acgme-program-id">
+      <valueIdentifier>
+        <system value="https://apps.acgme.org/ads/Public/Programs/Search"/>
+        <value value="141-98-76-543"/>
+      </valueIdentifier>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/completion-status">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs"/>
+          <code value="completed"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="http://example.org/fhir/uv/psv/StructureDefinition/qualification-specialty">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs"/>
+          <code value="CARD"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <code>
+      <coding>
+        <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"/>
+        <code value="training"/>
+      </coding>
+    </code>
+    <period>
+      <start value="2020-07-01"/>
+      <end value="2023-06-30"/>
+    </period>
+    <issuer>
+      <reference value="Organization/org-heart-institute"/>
+    </issuer>
+  </qualification>
+</Practitioner>

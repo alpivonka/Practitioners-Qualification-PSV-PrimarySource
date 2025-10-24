@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Provenance",
+  "id" : "prov-vr-csr-fl-7744",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance prov-vr-csr-fl-7744</b></p><a name=\"prov-vr-csr-fl-7744\"> </a><a name=\"hcprov-vr-csr-fl-7744\"> </a><p>Provenance for <a href=\"VerificationResult-vr-csr-fl-7744.html\">VerificationResult: targetLocation = qualification[state-csr][0]; status = validated; statusDate = 2025-10-21 14:05:00+0000; validationType = state-csr-primary-source</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-10-21 14:06:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}\">Verifier</span></td><td><a href=\"Organization-org-florida-csr-authority.html\">Organization Florida Department of Health — Controlled Substance Registration</a></td></tr></table></div>"
+  },
+  "target" : [{
+    "reference" : "VerificationResult/vr-csr-fl-7744"
+  }],
+  "recorded" : "2025-10-21T14:06:00Z",
+  "agent" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+        "code" : "verifier"
+      }]
+    },
+    "who" : {
+      "reference" : "Organization/org-florida-csr-authority"
+    }
+  }],
+  "entity" : [{
+    "role" : "source",
+    "what" : {
+      "reference" : "DocumentReference/docref-csr-fl-7744"
+    }
+  }]
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "psv-dea-schedule-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem psv-dea-schedule-cs</b></p><a name=\"psv-dea-schedule-cs\"> </a><a name=\"hcpsv-dea-schedule-cs\"> </a><p>This case-sensitive code system <code>http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">II<a name=\"psv-dea-schedule-cs-II\"> </a></td><td>Schedule II</td></tr><tr><td style=\"white-space:nowrap\">III<a name=\"psv-dea-schedule-cs-III\"> </a></td><td>Schedule III</td></tr><tr><td style=\"white-space:nowrap\">IV<a name=\"psv-dea-schedule-cs-IV\"> </a></td><td>Schedule IV</td></tr><tr><td style=\"white-space:nowrap\">V<a name=\"psv-dea-schedule-cs-V\"> </a></td><td>Schedule V</td></tr></table></div>"
+  },
+  "url" : "http://example.com/fhir/psv/CodeSystem/psv-dea-schedule-cs",
+  "version" : "1.0.0",
+  "name" : "PSVDEAScheduleCS",
+  "title" : "DEA Controlled Substance Schedules (II–V)",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Subset of U.S. controlled substance schedules commonly applicable to prescribers. Schedule I excluded.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "II",
+    "display" : "Schedule II"
+  },
+  {
+    "code" : "III",
+    "display" : "Schedule III"
+  },
+  {
+    "code" : "IV",
+    "display" : "Schedule IV"
+  },
+  {
+    "code" : "V",
+    "display" : "Schedule V"
+  }]
+}

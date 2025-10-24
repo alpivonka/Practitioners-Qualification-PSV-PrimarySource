@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/VerificationResult/vr-education-md> a fhir:VerificationResult ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vr-education-md"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: VerificationResult vr-education-md</b></p><a name=\"vr-education-md\"> </a><a name=\"hcvr-education-md\"> </a><p><b>target</b>: <a href=\"Practitioner-prac-education-with-vr.html\">Practitioner Morgan Chen </a></p><p><b>targetLocation</b>: qualification[education][0]</p><p><b>status</b>: Validated</p><p><b>statusDate</b>: 2025-10-21 13:55:00+0000</p><p><b>validationType</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs education-primary-source}\">education-primary-source</span></p><h3>PrimarySources</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-org-state-university-med.html\">Organization State University College of Medicine</a></td><td><span title=\"Codes:\">Registrar API</span></td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/verificationresult-status successful}\">successful</span></td><td>2025-10-21</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://example.com/fhir/psv/Practitioner/prac-education-with-vr> ;
+     fhir:reference [ fhir:v "Practitioner/prac-education-with-vr" ]
+  ] ) ; # 
+  fhir:targetLocation ( [ fhir:v "qualification[education][0]"] ) ; # 
+  fhir:status [ fhir:v "validated"] ; # 
+  fhir:statusDate [ fhir:v "2025-10-21T13:55:00Z"^^xsd:dateTime] ; # 
+  fhir:validationType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "education-primary-source" ]
+     ] )
+  ] ; # 
+  fhir:primarySource ( [
+     fhir:who [
+       fhir:link <http://example.com/fhir/psv/Organization/org-state-university-med> ;
+       fhir:reference [ fhir:v "Organization/org-state-university-med" ]
+     ] ;
+     fhir:communicationMethod ( [
+       fhir:text [ fhir:v "Registrar API" ]
+     ] ) ;
+     fhir:validationStatus [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/verificationresult-status"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "successful" ]
+       ] )
+     ] ;
+     fhir:validationDate [ fhir:v "2025-10-21"^^xsd:date ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

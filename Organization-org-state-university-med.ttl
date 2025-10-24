@@ -1,0 +1,23 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Organization/org-state-university-med> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "org-state-university-med"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization org-state-university-med</b></p><a name=\"org-state-university-med\"> </a><a name=\"hcorg-state-university-med\"> </a><p><b>name</b>: State University College of Medicine</p><p><b>endpoint</b>: <a href=\"Endpoint-endpoint-state-university-registrar.html\">Endpoint: status = active; connectionType = HL7 FHIR (Endpoint Connection Type#hl7-fhir-rest); payloadType = Any; payloadMimeType = application/fhir+json; address = https://registrar.stateu.example.edu/fhir</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:name [ fhir:v "State University College of Medicine"] ; # 
+  fhir:endpoint ( [
+     fhir:link <http://example.com/fhir/psv/Endpoint/endpoint-state-university-registrar> ;
+     fhir:reference [ fhir:v "Endpoint/endpoint-state-university-registrar" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

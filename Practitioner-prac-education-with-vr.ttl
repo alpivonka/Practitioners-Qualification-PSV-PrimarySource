@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Practitioner/prac-education-with-vr> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prac-education-with-vr"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://example.com/fhir/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.com/fhir/psv/StructureDefinition/PSVPractitioner>
+     ] [
+       fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner"^^xsd:anyURI ;
+       fhir:link <http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner prac-education-with-vr</b></p><a name=\"prac-education-with-vr\"> </a><a name=\"hcprac-education-with-vr\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-PSVPractitioner.html\">PSV Practitioner with Qualification Slices (Common Pattern + Rules)</a>, <code>http://example.org/fhir/uv/psv/StructureDefinition/PSVPractitioner</code></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/6.5.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/1478523690</p><p><b>name</b>: Morgan Chen </p><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-degree</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-degree-cs MD}\">MD</span></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-status</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs active}\">active</span></p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs education}\">education</span></p><p><b>period</b>: 2016-05-15 --&gt; (ongoing)</p><p><b>issuer</b>: <a href=\"Organization-org-state-university-med.html\">Organization State University College of Medicine</a></p></blockquote><blockquote><p><b>qualification</b></p><p><b>org/fhir/uv/psv/StructureDefinition/qualification-degree</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-degree-cs BS}\">BS</span></p><p><b>code</b>: <span title=\"Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs education}\">education</span></p><p><b>period</b>: 2012-05-15 --&gt; (ongoing)</p><p><b>issuer</b>: <a href=\"Organization-org-state-university-med.html\">Organization State University College of Medicine</a></p></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/us-npi"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1478523690" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:family [ fhir:v "Chen" ] ;
+     fhir:given ( [ fhir:v "Morgan" ] )
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-degree"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-degree-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "MD" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-status"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-status-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "active" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "education" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2016-05-15"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-state-university-med> ;
+       fhir:reference [ fhir:v "Organization/org-state-university-med" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://example.org/fhir/uv/psv/StructureDefinition/qualification-degree"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-degree-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "BS" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://example.org/fhir/uv/psv/CodeSystem/psv-qualification-type-cs"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "education" ]
+       ] )
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2012-05-15"^^xsd:date ]
+     ] ;
+     fhir:issuer [
+       fhir:link <http://example.com/fhir/psv/Organization/org-state-university-med> ;
+       fhir:reference [ fhir:v "Organization/org-state-university-med" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

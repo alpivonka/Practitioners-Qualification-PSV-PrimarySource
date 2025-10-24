@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="psvVS-dea-schedule"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet psvVS-dea-schedule</b></p><a name="psvVS-dea-schedule"> </a><a name="hcpsvVS-dea-schedule"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs</code><span title="Version is not explicity stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <url value="http://example.com/fhir/psv/ValueSet/psvVS-dea-schedule"/>
+  <version value="1.0.0"/>
+  <name value="PSVDEAScheduleVS"/>
+  <title value="VS — DEA Controlled Substance Schedules (II–V)"/>
+  <status value="active"/>
+  <date value="2025-10-24T14:50:11+00:00"/>
+  <description value="Allowed DEA schedules for clinician prescribing context."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-dea-schedule-cs"/>
+    </include>
+  </compose>
+</ValueSet>

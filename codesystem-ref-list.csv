@@ -1,0 +1,7 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://example.com/fhir/psv/CodeSystem/psv-action-cs,1.0.0,draft,,PSVActionCS,PSV  Action CodeSystem,"","ValueSet/psv-action-vs"
+http://example.com/fhir/psv/CodeSystem/psv-qualification-status-cs,1.0.0,active,,PSVQualificationStatusCS,Qualification Status,"","ValueSet/psvVS-qualification-status"
+http://example.com/fhir/psv/CodeSystem/psv-verification-type-cs,1.0.0,draft,,PSVVerificationTypeCS,PSV Verification Type CodeSystem,"","ValueSet/psv-verification-type-vs"
+http://example.org/fhir/uv/psv/CodeSystem/psv-board-specialty-cs,1.0.0,active,,PSVBoardSpecialtyCS,Board/Training Specialty (Minimal),"Minimal specialty codes used in examples. Replace/expand with your authoritative list.","ValueSet/psvVS-board-specialty"
+http://example.org/fhir/uv/psv/CodeSystem/psv-completion-status-cs,1.0.0,active,,PSVCompletionStatusCS,Training Completion Status,"Completion state for a training program.","ValueSet/psvVS-completion-status"
+http://example.org/fhir/uv/psv/CodeSystem/psv-training-type-cs,1.0.0,active,,PSVTrainingTypeCS,Training Type,"Types of postgraduate clinical training programs.","ValueSet/psvVS-training-type"

@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://example.com/fhir/psv/Provenance/prov-vr-training-fellowship-card> a fhir:Provenance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "prov-vr-training-fellowship-card"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Provenance prov-vr-training-fellowship-card</b></p><a name=\"prov-vr-training-fellowship-card\"> </a><a name=\"hcprov-vr-training-fellowship-card\"> </a><p>Provenance for <a href=\"VerificationResult-vr-training-fellowship-card.html\">VerificationResult: targetLocation = qualification[training][1]; status = validated; statusDate = 2025-10-21 12:30:00+0000; validationType = training-primary-source</a></p><p>Summary</p><table class=\"grid\"><tr><td>Recorded</td><td>2025-10-21 12:31:00+0000</td></tr></table><p><b>Agents</b></p><table class=\"grid\"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type verifier}\">Verifier</span></td><td><a href=\"Organization-org-heart-institute.html\">Organization National Heart Institute</a></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:target ( [
+     fhir:link <http://example.com/fhir/psv/VerificationResult/vr-training-fellowship-card> ;
+     fhir:reference [ fhir:v "VerificationResult/vr-training-fellowship-card" ]
+  ] ) ; # 
+  fhir:recorded [ fhir:v "2025-10-21T12:31:00Z"^^xsd:dateTime] ; # 
+  fhir:agent ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "verifier" ]
+       ] )
+     ] ;
+     fhir:who [
+       fhir:link <http://example.com/fhir/psv/Organization/org-heart-institute> ;
+       fhir:reference [ fhir:v "Organization/org-heart-institute" ]
+     ]
+  ] ) ; # 
+  fhir:entity ( [
+     fhir:role [ fhir:v "source" ] ;
+     fhir:what [
+       fhir:link <http://example.com/fhir/psv/DocumentReference/docref-training-fellowship-card> ;
+       fhir:reference [ fhir:v "DocumentReference/docref-training-fellowship-card" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

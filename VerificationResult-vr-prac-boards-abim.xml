@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VerificationResult xmlns="http://hl7.org/fhir">
+  <id value="vr-prac-boards-abim"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: VerificationResult vr-prac-boards-abim</b></p><a name="vr-prac-boards-abim"> </a><a name="hcvr-prac-boards-abim"> </a><p><b>target</b>: <a href="Practitioner-prac-boards-with-vr.html">Practitioner Alex Nguyen </a></p><p><b>targetLocation</b>: qualification[board][0]</p><p><b>status</b>: Validated</p><p><b>statusDate</b>: 2025-10-21 14:05:00+0000</p><p><b>validationType</b>: <span title="Codes:{http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs board-primary-source}">board-primary-source</span></p><h3>PrimarySources</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Who</b></td><td><b>CommunicationMethod</b></td><td><b>ValidationStatus</b></td><td><b>ValidationDate</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-org-abim.html">Organization American Board of Internal Medicine (ABIM)</a></td><td><span title="Codes:">Online portal lookup</span></td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/verificationresult-status successful}">successful</span></td><td>2025-10-21</td></tr></table></div>
+  </text>
+  <target>
+    <reference value="Practitioner/prac-boards-with-vr"/>
+  </target>
+  <targetLocation value="qualification[board][0]"/>
+  <status value="validated"/>
+  <statusDate value="2025-10-21T14:05:00Z"/>
+  <validationType>
+    <coding>
+      <system value="http://example.org/fhir/uv/psv/CodeSystem/psv-verification-type-cs"/>
+      <code value="board-primary-source"/>
+    </coding>
+  </validationType>
+  <primarySource>
+    <who>
+      <reference value="Organization/org-abim"/>
+    </who>
+    <communicationMethod>
+      <text value="Online portal lookup"/>
+    </communicationMethod>
+    <validationStatus>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/verificationresult-status"/>
+        <code value="successful"/>
+      </coding>
+    </validationStatus>
+    <validationDate value="2025-10-21"/>
+  </primarySource>
+</VerificationResult>

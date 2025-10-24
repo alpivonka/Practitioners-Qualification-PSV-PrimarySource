@@ -1,0 +1,27 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "psvVS-dea-registrant-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet psvVS-dea-registrant-type</b></p><a name=\"psvVS-dea-registrant-type\"> </a><a name=\"hcpsvVS-dea-registrant-type\"> </a><ul><li>Include all codes defined in <code>http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs</code><span title=\"Version is not explicity stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "url" : "http://example.com/fhir/psv/ValueSet/psvVS-dea-registrant-type",
+  "version" : "1.0.0",
+  "name" : "PSVDEARegistrantTypeVS",
+  "title" : "VS — DEA Registrant Type",
+  "status" : "active",
+  "date" : "2025-10-24T14:50:11+00:00",
+  "description" : "Allowed DEA registrant categories for practitioner credentialing.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://example.org/fhir/uv/psv/CodeSystem/psv-dea-registrant-type-cs"
+    }]
+  }
+}
